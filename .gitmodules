@@ -1,0 +1,3 @@
+[submodule "themes/IEEE-UNM-hugo-theme"]
+	path = themes/IEEE-UNM-hugo-theme
+	url = https://github.com/IEEE-UNM/IEEE-UNM-hugo-theme.git
