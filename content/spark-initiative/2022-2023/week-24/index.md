@@ -2,7 +2,7 @@
 title: "Week 24 Spark Meeting"
 date: 2023-02-08
 draft: false
-category: "Spark Initiative"
+categories: "Spark Initiative"
 ---
 # Installing SDK
 The theme of todays meeting is to install the required SDKs to program the Raspberry Pi Pico. To test out the installation the Sparks make an LED blink on the Raspberry Pi Pico.
