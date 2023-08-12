@@ -18,10 +18,5 @@ cards:
   link: http://localhost:1313/spark-initiative/2022-2023
   image: /img/suske.jpeg
 
-# btn1:
-#     text: Events
-#     url: https://gtbootstrap.com/
-# btn2:
-#     text: Spark Initiative
-#     url: https://gohugo.io/
+
 ---

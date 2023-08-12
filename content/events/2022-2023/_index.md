@@ -7,7 +7,3 @@ weight: 20
 catgories: events
 
 ---
-
-<!-- [google](www.google.com)
-
-<a class="btn btn-primary" href="#" role="button">Link</a> -->

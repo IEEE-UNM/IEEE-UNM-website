@@ -1,7 +1,7 @@
 baseURL = 'https://example.com/'
 languageCode = 'en-us'
 title = 'IEEE UNM'
-theme = 'IEEE-UNM-hugo-theme'
+theme = 'ananke'
 
 
 [markup.goldmark.renderer]
