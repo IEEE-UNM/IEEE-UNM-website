@@ -6,4 +6,6 @@ menu: main
 weight: 20
 catgories: events
 
+
+featured_image: "/img/bg1(cropped).jpg"
 ---

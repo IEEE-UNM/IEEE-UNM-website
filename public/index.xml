@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home Page on IEEE UNM</title>
-    <link>http://IEEEUMN.org/</link>
-    <description>Recent content in Home Page on IEEE UNM</description>
+    <title>Home on IEEE UNM</title>
+    <link>https://example.com/</link>
+    <description>Recent content in Home on IEEE UNM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Aug 2022 20:41:23 +0800</lastBuildDate><atom:link href="http://IEEEUMN.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Womans Day</title>
-      <link>http://IEEEUMN.org/events/2022-2023/womans-day/</link>
-      <pubDate>Thu, 09 Feb 2023 14:35:37 +0800</pubDate>
-      
-      <guid>http://IEEEUMN.org/events/2022-2023/womans-day/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Week 24 Spark Meeting</title>
-      <link>http://IEEEUMN.org/spark-initiative/2022-2023/week-24/</link>
-      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://IEEEUMN.org/spark-initiative/2022-2023/week-24/</guid>
-      <description>Installing SDK The theme of todays meeting is to install the required SDKs to program the Raspberry Pi Pico. To test out the installation the Sparks make an LED blink on the Raspberry Pi Pico.</description>
-    </item>
-    
+    <lastBuildDate>Thu, 11 Aug 2022 20:41:23 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

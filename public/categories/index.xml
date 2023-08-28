@@ -2,28 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on IEEE UNM</title>
-    <link>http://IEEEUMN.org/categories/</link>
+    <link>https://example.com/categories/</link>
     <description>Recent content in Categories on IEEE UNM</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 09 Feb 2023 14:35:37 +0800</lastBuildDate><atom:link href="http://IEEEUMN.org/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>events</title>
-      <link>http://IEEEUMN.org/categories/events/</link>
-      <pubDate>Thu, 09 Feb 2023 14:35:37 +0800</pubDate>
-      
-      <guid>http://IEEEUMN.org/categories/events/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spark Initiative</title>
-      <link>http://IEEEUMN.org/categories/spark-initiative/</link>
-      <pubDate>Thu, 09 Feb 2023 14:33:20 +0800</pubDate>
-      
-      <guid>http://IEEEUMN.org/categories/spark-initiative/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
