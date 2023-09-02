@@ -1,4 +1,24 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://IEEEUNM.com/'
 languageCode = 'en-us'
 title = 'IEEE UNM'
-theme = 'IEEE-UNM-hugo-theme'
+theme = 'ananke'
+
+
+[markup.goldmark.renderer]
+unsafe = true
+
+
+[params]
+slogan = ""
+site_logo = "img/ieee_logo_blue.png"
+background_color_class = "bg-black"
+
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/company/ieee-unm-student-branch/?originalSubdomain=my"
+
+
+[[params.ananke_socials]]
+name = "instagram"
+url = "https://www.instagram.com/ieee_unm/"

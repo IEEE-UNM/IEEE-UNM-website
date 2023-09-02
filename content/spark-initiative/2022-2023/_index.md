@@ -1,8 +1,13 @@
 ---
-title: "Spark Intiative 2022-2023"
-date: 2022-08-11T20:41:23+08:00
-draft: false
+title: "Spark Initiative"
+date: 2023-02-09T14:33:20+08:00
+draft: true
+menu: main 
+weight: 20
 categories: "Spark Initiative"
+
+
+
+featured_image: "/img/bg1.jpg"
 ---
-# Game Console
 
