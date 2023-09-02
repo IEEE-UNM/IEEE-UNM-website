@@ -8,6 +8,6 @@ categories: "Spark Initiative"
 
 
 
-featured_image: "/img/bg6.jpg"
+featured_image: "/img/bg1.jpg"
 ---
 

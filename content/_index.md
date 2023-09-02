@@ -19,5 +19,5 @@ cards:
   image: /img/suske.jpeg
 
 
-featured_image: "/img/bg4.avif"
+featured_image: "/img/bg1.jpg"
 ---
