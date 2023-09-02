@@ -1,0 +1,40 @@
+{{ partial "head" . }}
+{{ partial "header" . }}
+
+<div class="container">
+  <section id="main">
+    <h1 id="title">{{ .Title }}</h1>
+    <div>
+          <article id="content">
+             {{ .Content }}
+          </article>
+    </div>
+  </section>
+  <!-- <section class="section">
+    <div class="container">
+      <article class="article">
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </article>
+    </div>
+  </section> -->
+
+</div>
+
+{{ partial "footer" . }}
+
+
+<!-- {{ define "main"}}
+
+<div class="container">
+    <div class="row">
+        <div class="col">         
+            <h1> {{ .Site.Title }} </h1>
+            <h2 class="text-secondary h3"> {{ .Params.subtitle }} </h2>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+{{ end }} -->
