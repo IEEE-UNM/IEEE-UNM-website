@@ -1,0 +1,18 @@
+enable  : true
+title   : About Us
+description: >
+    Please donate we are broke
+
+image   : images/IEEE Banner Design.png
+aboutItem:
+  - title : Why Choose Us
+    description: > 
+      #WhyNott
+
+  - title : What You Get
+    description: > 
+      Brain damage
+
+  - title : Meet The Energy
+    description: > 
+      Slay

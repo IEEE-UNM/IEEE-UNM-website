@@ -1,24 +1,97 @@
 baseURL = 'https://IEEEUNM.com/'
 languageCode = 'en-us'
 title = 'IEEE UNM'
-theme = 'ananke'
+theme = ["timer-hugo"]
+# post pagination
+paginate = "2" # see https://gohugo.io/extras/pagination/
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Navbar Menus
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[menu.main]]
+name = "Events"
+url = "events/"
+weight = 5
+
+[[menu.main]]
+name = "Spark Initiative"
+url = "spark-initiative/"
+weight = 6
+
+[[menu.main]]
+name = "Contact"
+url = "contact/"
+weight = 7
 
 
-[markup.goldmark.renderer]
-unsafe = true
-
-
+# Site Params
 [params]
-slogan = ""
-site_logo = "img/ieee_logo_blue.png"
-background_color_class = "bg-black"
+home = "Home"
+logo = "/images/small_logo.png"
+dateFormat = "6 January 2006"
+# Meta data
+description = "IEEE UNM"
+author = "?"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with https://formspree.io
 
+# Banner Section
+[params.banner]
+enable = true
+bgImage = "/images/bg1.jpg"
+heading = "UNM IEEE Student Branch"
+description = "Read More?"
+# button
+btn = true
+btnText = "Read More"
+btnURL = "/"
 
-[[params.ananke_socials]]
-name = "linkedin"
-url = "https://www.linkedin.com/company/ieee-unm-student-branch/?originalSubdomain=my"
+# flip text
+[[params.banner.flipText]]
+title = "Electrical"
+[[params.banner.flipText]]
+title = "Electronic"
+[[params.banner.flipText]]
+title = "Computer Science"
 
+# Homepage About Section
+[params.about]
+enable = true
+title = "ABOUT US"
+content = "Hi"
+image = "/images/IEEE Logo Only.svg"
 
-[[params.ananke_socials]]
-name = "instagram"
+# Call to Action
+[params.cta]
+enable = true
+title = "CONTACT US"
+content = "Please"
+btnText = "Contact us"
+btnURL = "/contact"
+
+# Portfolio Section On Homepage
+[params.portfolio]
+enable = true
+title = "Past Events"
+subtitle = "2022/2023"
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-instagram"
 url = "https://www.instagram.com/ieee_unm/"
+
+[[params.socialIcon]]
+icon = "ion-social-linkedin"
+url = "https://www.linkedin.com/company/ieee-unm-student-branch/?originalSubdomain=my"

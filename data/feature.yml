@@ -1,0 +1,14 @@
+enable  : true
+title   : Our Vision & Mission
+subtitle: >
+  subtitle
+item    :
+  - icon  : ion-ios-eye
+    title : Vision
+    description : >
+      Hail The All Seeing Eye
+
+  - icon  : ion-battery-charging
+    title : Mission
+    description : >
+      Team Rocket

@@ -2,9 +2,10 @@
 title: "IEEE Movie Night: WALL-E"
 date: 2023-04-04T19:00:00+08:00
 draft: true
-categories: events
+category: [Events]
+type: portfolio
+image: "/images/posters/movie-night-poster.png"
 ---
 
-![Example image](/img/suske.jpeg)
-## Picture from event
-description
+![Example image](/images/events/IEEE_MovieNight.jpg)
+
