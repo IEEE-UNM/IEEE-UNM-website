@@ -5,7 +5,7 @@ draft: true
 category: [Events]
 type: portfolio
 image: "/images/posters/movie-night-poster.png"
+content_images: ["images/events/2022-2023/movie_night_img1.jpg"]
 ---
 
-![Example image](/images/events/IEEE_MovieNight.jpg)
-
+The IEEE UNM Student Branch held an enjoyable movie night on the 5th of April 2023. This event was a great way for the members to destress after the end-of-semester deadlines as well as strengthen the bond between each other. The participants were able to relax while enjoying their snacks and watching the movie of choice. 

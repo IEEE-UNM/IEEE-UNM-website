@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'IEEE UNM'
 theme = ["timer-hugo"]
 # post pagination
-paginate = "2" # see https://gohugo.io/extras/pagination/
+paginate = "3" # see https://gohugo.io/extras/pagination/
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
@@ -37,8 +37,8 @@ weight = 7
 # Site Params
 [params]
 home = "Home"
-logo = "/images/small_logo.png"
-dateFormat = "6 January 2006"
+logo = "/images/Final Logo small.png"
+dateFormat = "02 January 2006"
 # Meta data
 description = "IEEE UNM"
 author = "?"
@@ -52,17 +52,19 @@ contactFormAction = "#" # contact form works with https://formspree.io
 enable = true
 bgImage = "/images/bg1.jpg"
 heading = "UNM IEEE Student Branch"
-description = "Read More?"
+description = "Our core purpose is to foster technological innovation and excellence for the benefit of humanity."
 # button
 btn = true
-btnText = "Read More"
-btnURL = "/"
+btnText = "LEARN MORE"
+btnURL = "about/"
 
 # flip text
 [[params.banner.flipText]]
 title = "Electrical"
 [[params.banner.flipText]]
 title = "Electronic"
+[[params.banner.flipText]]
+title = "Mechatronic"
 [[params.banner.flipText]]
 title = "Computer Science"
 
