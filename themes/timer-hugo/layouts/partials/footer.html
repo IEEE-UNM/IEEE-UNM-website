@@ -2,7 +2,7 @@
 <footer id="footer">
   <div class="container">
     <div class="row content-justify-between">
-      <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left" style="display:flex;">
         <p class="copyright">Copyright:
           <span>
             <script>
@@ -10,8 +10,8 @@
             </script>
           </span> Design and Developed by
           <a href="/" target="_self">UNM IEEE Student Branch</a>.
-          <br> Email:
-          <a href="mailto: efycn2@nottingham.edu.my" target="_blank">UNM IEEE Student Branch email</a>
+          <br> Email: 
+          <a href="mailto: ieee.unm@outlook.com" target="_blank">UNM IEEE Student Branch Email</a>
         </p>
       </div>
       <div class="col-md-4 col-12">
@@ -58,3 +58,7 @@
   ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
   ga('send', 'pageview');
 </script>
+
+{{ "<!-- Other Icons -->" | safeHTML }}
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

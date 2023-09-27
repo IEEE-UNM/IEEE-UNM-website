@@ -47,6 +47,7 @@ googleAnalitycsID = "Your ID"
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io
 
+
 # Banner Section
 [params.banner]
 enable = true
@@ -55,7 +56,7 @@ heading = "UNM IEEE Student Branch"
 description = "Our core purpose is to foster technological innovation and excellence for the benefit of humanity."
 # button
 btn = true
-btnText = "LEARN MORE"
+btnText = "ABOUT US"
 btnURL = "about/"
 
 # flip text
@@ -71,9 +72,10 @@ title = "Computer Science"
 # Homepage About Section
 [params.about]
 enable = true
-title = "ABOUT US"
-content = "Hi"
-image = "/images/IEEE Logo Only.svg"
+title = "WHO ARE WE?"
+content = "Inverted pendulums"
+background_image = "/images/IEEE Logo Only.svg"
+image = "/images/Final Logo.png"
 
 # Call to Action
 [params.cta]

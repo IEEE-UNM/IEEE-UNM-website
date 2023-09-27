@@ -52,25 +52,25 @@ a:hover {
 }
 
 .section-heading p {
-  font-size: 14px;
-  font-weight: 300;
   color: #727272;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
 }
 
 .title {
-  font-size: 30px;
-  line-height: 1.1;
-  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
   color: #333;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .subtitle {
   font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -397,16 +397,27 @@ a:hover {
 }
 
 #about {
-  padding: 110px 0;
+  padding: 30px 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 #about .block {
   padding: 20px 30px 0 30px;
 }
 
+#about .block h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
 #about .block h2 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -414,6 +425,7 @@ a:hover {
 #about .block p {
   color: #727272;
   font-size: 16px;
+  font-weight: 400;
   line-height: 28px;
   margin-bottom: 35px;
 }
@@ -593,11 +605,11 @@ figure figcaption p {
 }
 
 #feature {
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 #feature .media {
-  margin: 0px 0 70px 0;
+  margin: 0px 0 30px 0;
 }
 
 #feature .media .media-left {
@@ -609,8 +621,8 @@ figure figcaption p {
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 20px;
-  margin: 0px 0px 15px;
+  margin-bottom: 10px;
+  margin: 0px 0px 10px;
   font-weight: 400;
 }
 
@@ -624,11 +636,11 @@ figure figcaption p {
   text-decoration: none;
   color: #fff;
   background-color: #0043ae;
-  height: 100px;
+  height: 70px;
   text-align: center;
-  width: 100px;
+  width: 70px;
   font-size: 50px;
-  line-height: 100px;
+  line-height: 70px;
   overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -954,6 +966,7 @@ article {
 .single-post .media .media-body a {
   color: #0043ae;
   font-size: 12px;
+  padding: 30px 20px;
 }
 
 .single-post .media .media {
@@ -1270,15 +1283,20 @@ article {
   background: #fff;
   padding: 25px 0;
   color: #555;
+  align-items: center;
+  justify-content: center;
 }
 
 #footer .copyright {
-  font-size: 13px;
+  font-size: 18px;
   margin-bottom: 0;
+  top: 50%;
+  margin: auto;
 }
 
 #footer .copyright a {
   color: #0043ae;
+  text-align: center;
 }
 
 #footer .social {
@@ -1288,11 +1306,11 @@ article {
 
 #footer .social li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 #footer .social li a {
-  font-size: 22px;
+  font-size: 60px;
   color: #0043ae;
 }
 
@@ -1360,3 +1378,80 @@ ul.social-icons li {
   background: #0043ae;
   color: #fff;
 }
+
+.bg-secondary {
+  background: #fcfcfc !important;
+}
+
+.hover-bg-secondary {
+  transition: 0.2s ease;
+}
+.hover-bg-secondary * {
+  transition: inherit;
+}
+
+.overlay-secondary::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fcfcfc;
+  opacity: 0.8;
+}
+.overlay-secondary-half {
+  position: relative;
+}
+.overlay-secondary-half::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #07085d 60%, transparent);
+}
+.overlay-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.bg-image img {
+  height: 100%;
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .bg-image img {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .bg-image img {
+    display: block;
+    height: auto;
+  }
+}
+
+.section-border {
+  height: 1px;
+  width: 40%;
+  background: #0043ae;
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+
+.column {
+  flex: 50%;
+}
+
