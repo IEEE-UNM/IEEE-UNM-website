@@ -4,7 +4,5 @@ date: 2022-11-05T10:00:00+08:00
 draft: true
 category: [Events]
 type: portfolio
-image: "/images/posters/STM32 workshop.png"
+image: "images/posters/STM32 workshop.png"
 ---
-
-![Example image](/images/events/STMworkshop.jpg)

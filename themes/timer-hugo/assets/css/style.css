@@ -1283,8 +1283,6 @@ article {
   background: #fff;
   padding: 25px 0;
   color: #555;
-  align-items: center;
-  justify-content: center;
 }
 
 #footer .copyright {
@@ -1450,6 +1448,7 @@ ul.social-icons li {
   border-radius: 5px;
   margin: 20px 0px;
 }
+
 
 .column {
   flex: 50%;

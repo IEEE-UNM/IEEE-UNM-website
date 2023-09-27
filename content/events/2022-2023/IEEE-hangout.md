@@ -4,7 +4,7 @@ date: 2022-10-28T20:00:00+08:00
 draft: true
 category: [Events]
 type: portfolio
-image: "/images/posters/IEEE Welcoming Night Poster.png"
+image: "images/posters/IEEE Welcoming Night Poster.png"
 content_images: ["images/events/2022-2023/IEEE_hangout_img1.jpg",
                  "images/events/2022-2023/IEEE_hangout_img2.jpg"]
 ---

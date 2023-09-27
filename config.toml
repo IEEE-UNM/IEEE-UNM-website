@@ -37,7 +37,7 @@ weight = 7
 # Site Params
 [params]
 home = "Home"
-logo = "/images/Final Logo small.png"
+logo = "images/Final Logo small.png"
 dateFormat = "02 January 2006"
 # Meta data
 description = "IEEE UNM"
@@ -51,7 +51,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 # Banner Section
 [params.banner]
 enable = true
-bgImage = "/images/bg1.jpg"
+bgImage = "images/bg1.jpg"
 heading = "UNM IEEE Student Branch"
 description = "Our core purpose is to foster technological innovation and excellence for the benefit of humanity."
 # button
@@ -74,8 +74,8 @@ title = "Computer Science"
 enable = true
 title = "WHO ARE WE?"
 content = "Inverted pendulums"
-background_image = "/images/IEEE Logo Only.svg"
-image = "/images/Final Logo.png"
+background_image = "images/IEEE Logo Only.svg"
+image = "images/Final Logo.png"
 
 # Call to Action
 [params.cta]
@@ -83,7 +83,7 @@ enable = true
 title = "CONTACT US"
 content = "Please"
 btnText = "Contact us"
-btnURL = "/contact"
+btnURL = "contact/"
 
 # Portfolio Section On Homepage
 [params.portfolio]
