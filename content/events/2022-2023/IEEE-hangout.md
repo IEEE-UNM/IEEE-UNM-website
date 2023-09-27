@@ -1,7 +1,7 @@
 ---
 title: "IEEE Welcoming Night: Hang Out With IEEE"
 date: 2022-10-28T20:00:00+08:00
-draft: true
+draft: false
 category: [Events]
 type: portfolio
 image: "images/posters/IEEE Welcoming Night Poster.png"
