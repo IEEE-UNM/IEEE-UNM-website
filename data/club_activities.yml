@@ -1,0 +1,14 @@
+enable : true
+title : WHAT WE DO 
+club_activities_item :
+- icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
+  title : We're Creative
+  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+
+- icon : ion-flash
+  title : Spark Initiative
+  content : 
+  
+- icon : ti-thought # themify icon pack : https://themify.me/themify-icons
+  title : We're Genius
+  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.

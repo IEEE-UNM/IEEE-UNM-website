@@ -609,7 +609,7 @@ figure figcaption p {
 }
 
 #feature .media {
-  margin: 0px 0 30px 0;
+  margin: 0 15px 0;
 }
 
 #feature .media .media-left {
@@ -1452,5 +1452,72 @@ ul.social-icons li {
 
 .column {
   flex: 50%;
+  min-width: 260px;
 }
 
+/*=================================================================
+  Club Activities section
+==================================================================*/
+.club_activities .block {
+  background: #0043ae;
+  padding: 30px;
+  border-bottom: 2px solid transparent;
+  transition: .5s all;
+  margin-bottom: 20px;
+}
+
+.club_activities .block:hover {
+  border-bottom: 5px solid #102547;
+}
+
+.club_activities .block:hover .icon-box {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.club_activities .block .icon-box {
+  position: relative;
+  width: 160px;
+  height: 92.38px;
+  background-color: transparent;
+  margin: 46.19px auto 60px;
+  padding: 20px 0;
+  border-left: 2px solid #102547;
+  border-right: 2px solid #102547;
+  font-size: 50px;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.club_activities .block .icon-box:after,
+.club_activities .block .icon-box:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 113.14px;
+  height: 113.14px;
+  background-color: inherit;
+  left: 20.4315px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+}
+
+.club_activities .block .icon-box:before {
+  top: -56.5685px;
+  border-top: 2px solid #102547;
+  border-right: 2px solid #102547;
+}
+
+.club_activities .block .icon-box:after {
+  bottom: -56.5685px;
+  border-bottom: 2px solid #102547;
+  border-left: 2px solid #102547;
+}
+
+.club_activities .block .icon-box h3 {
+  color: #afbac4;
+}

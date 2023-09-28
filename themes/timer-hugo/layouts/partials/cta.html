@@ -9,7 +9,7 @@
             data-wow-duration="500ms">{{ . }}</h1>{{ end }}
             {{ with .Site.Params.cta.content }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
               {{ . | safeHTML }}</p>{{ end }}
-            <a href="{{ .Site.Params.cta.btnURL }}" class="btn btn-default btn-contact wow fadeInDown"
+            <a href="{{ .Site.Params.cta.btnURL | absURL }}" class="btn btn-default btn-contact wow fadeInDown"
               data-wow-delay=".7s" data-wow-duration="500ms">{{ .Site.Params.cta.btnText }}</a>
         </div>
       </div>
