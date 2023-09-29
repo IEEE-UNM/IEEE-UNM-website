@@ -402,10 +402,6 @@ a:hover {
   margin-bottom: 60px;
 }
 
-#about .block {
-  padding: 20px 30px 0 30px;
-}
-
 #about .block h1 {
   font-size: 40px;
   line-height: 50px;
@@ -418,8 +414,7 @@ a:hover {
 #about .block h2 {
   font-size: 24px;
   font-weight: 500;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+  text-align: left;
 }
 
 #about .block p {
@@ -605,7 +600,7 @@ figure figcaption p {
 }
 
 #feature {
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
 #feature .media {
@@ -636,11 +631,11 @@ figure figcaption p {
   text-decoration: none;
   color: #fff;
   background-color: #0043ae;
-  height: 70px;
+  height: 80px;
   text-align: center;
-  width: 70px;
+  width: 80px;
   font-size: 50px;
-  line-height: 70px;
+  line-height: 80px;
   overflow: hidden;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1446,44 +1441,51 @@ ul.social-icons li {
   width: 40%;
   background: #0043ae;
   border-radius: 5px;
-  margin: 20px 0px;
+  margin: 5px 0px;
 }
-
 
 .column {
   flex: 50%;
-  min-width: 260px;
+  min-width: 240px;
 }
 
 /*=================================================================
   Club Activities section
 ==================================================================*/
+#club_activities {
+  padding: 30px 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: #FCFCFC;
+}
+
 .club_activities .block {
-  background: #0043ae;
-  padding: 30px;
+  background: #fff;
+  padding: 20px;
   border-bottom: 2px solid transparent;
   transition: .5s all;
   margin-bottom: 20px;
+  border: 2px solid #0043ae;
 }
 
 .club_activities .block:hover {
-  border-bottom: 5px solid #102547;
+  border-top: 10px solid #0043ae;
 }
 
-.club_activities .block:hover .icon-box {
+.club_activities .block :hover .icon-box {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
 .club_activities .block .icon-box {
-  position: relative;
+  /* position: relative;
   width: 160px;
   height: 92.38px;
   background-color: transparent;
   margin: 46.19px auto 60px;
   padding: 20px 0;
-  border-left: 2px solid #102547;
-  border-right: 2px solid #102547;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
   font-size: 50px;
   -webkit-transform: translateZ(0px);
   transform: translateZ(0px);
@@ -1491,9 +1493,26 @@ ul.social-icons li {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  background: #0043ae; */
+  text-decoration: none;
+  color: #fff;
+  background-color: #0043ae;
+  height: 140px;
+  text-align: center;
+  width: 140px;
+  font-size: 80px;
+  line-height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-shadow: #002d77 1px 1px, #002d77 2px 2px, #002d77 3px 3px, #002d77 4px 4px, #002d77 5px 5px, #002d77 6px 6px, #002d77 7px 7px, #002d77 8px 8px, #002d77 9px 9px, #002d77 10px 10px, #002d77 11px 11px, #002d77 12px 12px, #002d77 13px 13px, #002d77 14px 14px, #002d77 15px 15px, #002d77 16px 16px, #002d77 17px 17px, #002d77 18px 18px, #002d77 19px 19px, #002d77 20px 20px, #002d77 21px 21px, #002d77 22px 22px, #002d77 23px 23px, #002d77 24px 24px, #002d77 25px 25px, #002d77 26px 26px, #002d77 27px 27px, #002d77 28px 28px, #002d77 29px 29px, #002d77 30px 30px, #002d77 31px 31px, #002d77 32px 32px, #002d77 33px 33px, #002d77 34px 34px, #002d77 35px 35px, #002d77 36px 36px, #002d77 37px 37px, #002d77 38px 38px, #002d77 39px 39px, #002d77 40px 40px, #002d77 41px 41px, #002d77 42px 42px, #002d77 43px 43px, #002d77 44px 44px, #002d77 45px 45px, #002d77 46px 46px, #002d77 47px 47px, #002d77 48px 48px, #002d77 49px 49px, #002d77 50px 50px, #002d77 51px 51px, #002d77 52px 52px, #002d77 53px 53px, #002d77 54px 54px, #002d77 55px 55px, #002d77 56px 56px, #002d77 57px 57px, #002d77 58px 58px, #002d77 59px 59px, #002d77 60px 60px, #002d77 61px 61px, #002d77 62px 62px, #002d77 63px 63px, #002d77 64px 64px, #002d77 65px 65px, #002d77 66px 66px, #002d77 67px 67px, #002d77 68px 68px, #002d77 69px 69px, #002d77 70px 70px, #002d77 71px 71px, #002d77 72px 72px, #002d77 73px 73px, #002d77 74px 74px, #002d77 75px 75px, #002d77 76px 76px, #002d77 77px 77px, #002d77 78px 78px, #002d77 79px 79px, #002d77 80px 80px, #002d77 81px 81px, #002d77 82px 82px, #002d77 83px 83px, #002d77 84px 84px, #002d77 85px 85px, #002d77 86px 86px, #002d77 87px 87px, #002d77 88px 88px, #002d77 89px 89px, #002d77 90px 90px, #002d77 91px 91px, #002d77 92px 92px, #002d77 93px 93px, #002d77 94px 94px, #002d77 95px 95px, #002d77 96px 96px, #002d77 97px 97px, #002d77 98px 98px, #002d77 99px 99px, #002d77 100px 100px;
+  margin: 10px auto 40px;
 }
 
-.club_activities .block .icon-box:after,
+/* .club_activities .block .icon-box:after,
 .club_activities .block .icon-box:before {
   content: "";
   position: absolute;
@@ -1508,16 +1527,27 @@ ul.social-icons li {
 
 .club_activities .block .icon-box:before {
   top: -56.5685px;
-  border-top: 2px solid #102547;
-  border-right: 2px solid #102547;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  background: #0043ae;
 }
 
 .club_activities .block .icon-box:after {
   bottom: -56.5685px;
-  border-bottom: 2px solid #102547;
-  border-left: 2px solid #102547;
-}
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  background: #0043ae;
+} */
 
 .club_activities .block .icon-box h3 {
   color: #afbac4;
+}
+
+.container {
+  padding: 30px 0 0;
+  margin-top: 50px;
+}
+
+.hvr-bounce-to-right:before {
+  background-color: #0043ae;
 }

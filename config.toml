@@ -21,17 +21,17 @@ weight = 2
 [[menu.main]]
 name = "Events"
 url = "events/"
-weight = 5
+weight = 3
 
 [[menu.main]]
 name = "Spark Initiative"
 url = "spark-initiative/"
-weight = 6
+weight = 4
 
 [[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 5
 
 
 # Site Params
@@ -72,8 +72,8 @@ title = "Computer Science"
 # Homepage About Section
 [params.about]
 enable = true
-title = "WHO ARE WE?"
-content = "Inverted pendulums"
+title = "WHO ARE WE"
+content = "Our Vision & Mission"
 background_image = "images/IEEE Logo Only.svg"
 image = "images/Final Logo.png"
 

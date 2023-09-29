@@ -1,14 +1,25 @@
 enable : true
 title : WHAT WE DO 
+subtitle: Our Club Activities
 club_activities_item :
-- icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-  title : We're Creative
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+- icon : ion-calendar
+  title : Events
+  content : We organize talks, industrial visits, forums, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/"
 
 - icon : ion-flash
   title : Spark Initiative
-  content : 
+  content : We provide the components and tasks for participant-centred projects.
+  btn : true
+  btnText : "Read More"
+  btnURL : "spark-initiative/"
   
-- icon : ti-thought # themify icon pack : https://themify.me/themify-icons
-  title : We're Genius
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+- icon : ion-android-globe
+  title : Network
+  content : We provide opportunities for networking with industry leaders and companies.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/"
+  

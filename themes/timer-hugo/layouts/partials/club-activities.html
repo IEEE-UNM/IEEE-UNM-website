@@ -6,25 +6,30 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-12">
 				{{"<!-- section title -->" | safeHTML}}
-				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-					<h2> {{ with .Site.Data.club_activities.title }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
-						{{ with .Site.Data.club_activities.title }} {{ index (split . " ") 1 | safeHTML }} {{ end }} </span></h2>
-					<div class="border-meghna"></div>
+				<div class="section-heading">
+					{{ with .Site.Data.club_activities.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+					{{ with .Site.Data.club_activities.subtitle }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
+					<div class="section-border wow fadeInDown mx-auto" data-wow-delay=".7s"></div>
 				</div>
 			</div>
 			{{"<!-- /section title -->" | safeHTML}}
 
 			{{ range .Site.Data.club_activities.club_activities_item }}
 			{{"<!-- club_activities item -->" | safeHTML}}
-			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-lg-4 text-center wow fadeInLeft" data-wow-duration="500ms">
 				<div class="block">
 					<div class="icon-box">
 						{{with .icon}}<i class="{{ . }}"></i>{{ end }}
 					</div>
-					{{"<!-- Express club_activities Yourself -->" | safeHTML}}
+					{{"<!-- club activities text-->" | safeHTML}}
 					<div class="content text-center">
 						<h3>{{ .title }}</h3>
 						<p>{{ .content | markdownify }}</p>
+						{{ if .btn }}
+						<a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
+						  data-wow-delay=".9s" href="{{ .btnURL }}"
+						  target="_self">{{ .btnText }}</a>
+						{{ end }}
 					</div>
 				</div>
 			</div>
