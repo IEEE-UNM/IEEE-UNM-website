@@ -4,10 +4,45 @@ subtitle: Our Club Activities
 club_activities_item :
 - icon : ion-calendar
   title : Events
+  content : We organize talks, industrial visits, forums, workshops, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/"
+
+- icon : ion-mic-b
+  title : Talks
+  content : We organize talks, industrial visits, forums, workshops, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/"
+
+- icon : ion-map
+  title : Industrial Visits
+  content : We organize talks, industrial visits, forums, workshops, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/"
+
+- icon : ion-chatboxes
+  title : Forums
+  content : We organize talks, industrial visits, forums, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/" 
+
+- icon : ion-gear-a
+  title : Workshops
   content : We organize talks, industrial visits, forums, and many other exciting events.
   btn : true
   btnText : "Read More"
   btnURL : "events/"
+
+- icon : ion-coffee
+  title : Hangouts
+  content : We organize talks, industrial visits, forums, and many other exciting events.
+  btn : true
+  btnText : "Read More"
+  btnURL : "events/" 
 
 - icon : ion-flash
   title : Spark Initiative
@@ -16,7 +51,7 @@ club_activities_item :
   btnText : "Read More"
   btnURL : "spark-initiative/"
   
-- icon : ion-android-globe
+- icon : ion-ios-world-outline #ion-android-globe
   title : Network
   content : We provide opportunities for networking with industry leaders and companies.
   btn : true

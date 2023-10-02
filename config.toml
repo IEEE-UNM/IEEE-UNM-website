@@ -38,7 +38,7 @@ weight = 5
 [params]
 home = "Home"
 logo = "images/Final Logo small.png"
-dateFormat = "02 January 2006"
+dateFormat = "2 January 2006, Monday"
 # Meta data
 description = "IEEE UNM"
 author = "?"
@@ -89,7 +89,7 @@ btnURL = "contact/"
 [params.portfolio]
 enable = true
 title = "Past Events"
-subtitle = "2022/2023"
+parent_dir = ["2022-2023","2023-2024"]
 
 # social icon
 [[params.socialIcon]]

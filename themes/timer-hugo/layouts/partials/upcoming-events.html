@@ -1,0 +1,79 @@
+{{ if .Site.Data.upcoming_events.enable }}
+{{ "<!-- Upcoming Events Section Start -->" | safeHTML }}
+
+<section class="bg-secondary upcoming_events section" id="upcoming_events">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				{{"<!-- section title -->" | safeHTML}}
+				<div class="section-heading">
+					{{ with .Site.Data.upcoming_events.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+					<div class="section-border wow fadeInDown mx-auto" data-wow-delay=".5s"></div>
+				</div>
+			    {{"<!-- /section title -->" | safeHTML}}
+
+                <!-- link cards -->
+                <div id="carouselExample" class="carousel carousel slide  wow fadeInLeft" data-wow-delay=".7s" data-ride="carousel">
+                    <!-- Image Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        {{ range $index, $item := .Site.Data.upcoming_events.items }}
+                        <li data-target="#carouselExample" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" {{ end }}></li> 
+                        {{ end }}
+                    </ol>
+
+                    <!-- add cards -->
+                    <div class="carousel-inner">
+                        {{ range $index, $item := .Site.Data.upcoming_events.items }}
+                        <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="{{ .poster | absURL }}" class="img-fluid rounded-start" alt="Slide {{ add $index 1}}">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                    <h1 style="margin-bottom: 15px;"><b>{{ .title }}</b></h1>
+                                    {{ if eq .num_days 1 }}
+			                            {{"<!-- if event is within 1 day -->" | safeHTML}}
+                                        <h3><b>Date: </b>{{ dateFormat (.Site.Params.dateFormat | default  "2 January 2006 (Monday)") .start_date }}</h3>
+                                        <h3><b>Time: </b>
+                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04") .start_date}} to 
+                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04 (MST)") .end_date }}
+                                        </h3>
+                                    {{ else }}
+                                        <h3><b>Date: </b>
+                                            {{ dateFormat (.Site.Params.dateFormat | default  "2 January (Monday)") .start_date }} to 
+                                            {{ dateFormat (.Site.Params.dateFormat | default  "2 January (Monday) 2006") .end_date }}
+                                        </h3>
+                                        <h3><b>Time: </b>
+                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04") .start_date}} to 
+                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04 (MST)") .end_date }}
+                                        </h3>
+                                    {{ end }}
+                                    <h3><b>Venue: </b> {{ .venue }} </h3>
+                                    <div class="section-border" style="margin: 20px 0 10px;"></div>
+                                    <p>{{ .content | markdownify }}</p>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <!-- Carousel Button -->
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-icon ion-ios-arrow-back" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-icon ion-ios-arrow-forward" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+			</div>
+        </div>
+    </div>
+</section>
+
+{{ "<!-- Upcoming Events Section End -->" | safeHTML }}
+{{ end }}

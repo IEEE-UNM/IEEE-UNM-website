@@ -452,7 +452,9 @@ a:hover {
 }
 
 .works {
-  padding: 80px 0;
+  padding: 30px 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background: #FCFCFC;
 }
 
@@ -1466,6 +1468,7 @@ ul.social-icons li {
   transition: .5s all;
   margin-bottom: 20px;
   border: 2px solid #0043ae;
+  border-radius: 0.4rem;
 }
 
 .club_activities .block:hover {
@@ -1551,3 +1554,28 @@ ul.social-icons li {
 .hvr-bounce-to-right:before {
   background-color: #0043ae;
 }
+
+.upcoming_events {
+  padding: 30px 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: #FCFCFC;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #aacaff;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #0043ae;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+}
+
+.carousel-control-icon {
+  font-size: 80px;
+  color: #000;
+}
+ 

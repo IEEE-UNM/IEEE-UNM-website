@@ -16,7 +16,7 @@
 
 			{{ range .Site.Data.club_activities.club_activities_item }}
 			{{"<!-- club_activities item -->" | safeHTML}}
-			<div class="col-lg-4 text-center wow fadeInLeft" data-wow-duration="500ms">
+			<div class="col-lg-4 text-center wow fadeInLeft" data-wow-duration="700ms">
 				<div class="block">
 					<div class="icon-box">
 						{{with .icon}}<i class="{{ . }}"></i>{{ end }}
@@ -27,7 +27,7 @@
 						<p>{{ .content | markdownify }}</p>
 						{{ if .btn }}
 						<a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
-						  data-wow-delay=".9s" href="{{ .btnURL }}"
+						  data-wow-delay=".5s" href="{{ .btnURL }}"
 						  target="_self">{{ .btnText }}</a>
 						{{ end }}
 					</div>
