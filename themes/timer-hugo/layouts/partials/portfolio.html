@@ -23,7 +23,7 @@
 				{{ range $i, $dir := $parent_dir | uniq }}
 				<div class="carousel-item {{ if eq $i 0 }} active {{ end }}">
 				<div class="section-heading">
-					<p class="wow fadeInDown" data-wow-delay=".5s">{{ (path.Base $dir) }}</p>
+					<p class="wow fadeInDown" data-wow-delay=".3s">{{ (path.Base $dir) }}</p>
 					<div class="section-border wow fadeInDown mx-auto" data-wow-delay=".7s"></div>
 				</div>	
 				
