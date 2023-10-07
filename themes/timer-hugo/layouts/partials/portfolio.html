@@ -2,39 +2,83 @@
 {{ "<!-- Portfolio Section Start -->" | safeHTML }}
 <section id="works" class="works">
 	<div class="container">
-		<div class="section-heading">
+		<div class="section-heading mb-0"> 
 			{{ with .Site.Params.portfolio.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
-			{{ with .Site.Params.portfolio.subtitle }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
-		</div>
-		<div class="row">
-			{{ range $index, $element:= where .Site.RegularPages "Type" "portfolio" }}
-			<div class="col-md-4 col-sm-6">
-				{{ $delay := mul $index 300 }}
-				<figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms"
-					data-wow-delay="{{ $delay }}ms">
-					<div class="img-wrapper">
-						<img src="{{ .Params.Image | relURL }}" class="img-fluid" alt="this is a title">
-						<div class="overlay">
-							<div class="buttons">
-								<a rel="gallery" class="fancybox" href="{{ .Params.Image | relURL }}">Poster</a>
-								<a href="{{ .Permalink }}">Details</a>
+		</div>	
+
+		<div id="pastEventCarousel" class="carousel carousel slide  wow fadeInLeft" data-wow-delay=".5s" data-ride="carousel">	
+			{{ $parent_dir := slice }}
+			{{ $element := where .Site.RegularPages "Type" "portfolio"}}
+			{{ range $e := $element }} {{ $parent_dir = $parent_dir | append (path.Dir .) }} {{ end }}
+
+			<!-- Image Carousel Indicators -->
+			<ol class="carousel-indicators">
+				{{ range $index, $dir := $parent_dir | uniq }}
+                    <li data-target="#pastEventCarousel" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" {{ end }}></li> 
+				{{ end }}
+			</ol>
+			
+			<!-- add cards -->
+			<div class="carousel-inner">
+				{{ range $i, $dir := $parent_dir | uniq }}
+				<div class="carousel-item {{ if eq $i 0 }} active {{ end }}">
+				<div class="section-heading">
+					<p class="wow fadeInDown" data-wow-delay=".3s">{{ (path.Base $dir) }}</p>
+					<div class="section-border wow fadeInDown mx-auto" data-wow-delay=".7s"></div>
+				</div>	
+				
+				<div class="row">
+				{{ range $index, $e := $element | uniq}}
+				{{ if eq (path.Dir $e) $dir }}
+					<div class="col-md-4 col-sm-6" style="display: flex;">
+						{{ $delay := mul $index 300 }}
+						<figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms"
+							data-wow-delay="{{ $delay }}ms">
+							<div class="img-wrapper">
+								<img src="{{ $e.Params.Image | relURL }}" class="img-fluid" alt="this is a title">
+								<div class="overlay">
+									<div class="buttons">
+										{{ if isset $e.Params "zoom_in_image" }}
+										<a rel="gallery" class="fancybox" href="{{ $e.Params.zoom_in_image | relURL }}">Poster</a>
+										{{ else }}
+										<a rel="gallery" class="fancybox" href="{{ $e.Params.Image | relURL }}">Poster</a>
+										{{ end }}
+										<a href="{{ $e.Permalink }}">Details</a>
+									</div>
+								</div>
 							</div>
-						</div>
+							<figcaption>
+								<h4>
+									<a href="{{ $e.Permalink }}">
+										{{ $e.Title }}
+									</a>
+								</h4>
+								<p>
+									{{ $e.Params.caption }}
+								</p>
+							</figcaption>
+						</figure>
 					</div>
-					<figcaption>
-						<h4>
-							<a href="{{ .Permalink }}">
-								{{ .Title }}
-							</a>
-						</h4>
-						<p>
-							{{ .Params.caption }}
-						</p>
-					</figcaption>
-				</figure>
+				{{ end }}
+				{{ end }}
+				</div>
 			</div>
 			{{ end }}
 		</div>
+
+			
+			<!-- Carousel Button -->
+			<a class="carousel-control-prev" style="width: 45%; align-items: baseline;" href="#pastEventCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-icon ion-ios-arrow-back" style="font-size: 50px;" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" style="width: 45%; align-items: baseline;" href="#pastEventCarousel" role="button" data-slide="next">
+				<span class="carousel-control-icon ion-ios-arrow-forward" style="font-size: 50px;" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+
+		</div>	
 	</div>
 </section>
 {{ "<!-- Portfolio Section End -->" | safeHTML }}

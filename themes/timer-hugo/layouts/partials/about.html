@@ -2,56 +2,57 @@
 {{ "<!-- About Section Start -->" | safeHTML }}
 
 <section  id="about" class="section bg-secondary position-relative">
-	<div class="bg-image overlay-secondary block wow fadeInLeft mx-auto" data-wow-delay=".3s" data-wow-duration="500ms">
-		{{ with .Site.Params.about.background_image }}<img src="{{ . | absURL }}" alt="bg-image">{{ end }}
-	</div>
-	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-xl-9 mx-auto">
-		  <div class="row align-items-center">
-			<div class="col-lg-4 mb-5 mb-lg-0 block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-				{{ with .Site.Params.about.image }}<img src="{{ . | absURL }}" alt="feature-image" class="img-fluid">{{ end }}
-			</div>
-			<div class="col-lg-7 offset-lg-1">
-			  <div class="row">
-				<div class="col-12">
-					<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-						{{ with .Site.Params.about.title }}<h1>{{ . }}</h2>{{ end }}
-						{{ with .Site.Params.about.content }}<p>{{ . | safeHTML }}</p>{{ end }}
-				  		<div class="section-border wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms"></div>
-					</div>
-				{{ if .Site.Data.feature.enable }}
-				{{ "<!-- Feature Section Start -->" | safeHTML }}
-				<section id="feature">
-					<div class="block">
-						<div class="row">
-							{{ range $index, $elemrnt := .Site.Data.feature.item }}
-							<div class="column">
-								{{ $delay := mul (add $index 1) 300 }}
-								<div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
-									<div class="media-left">
-										<div class="icon">
-											{{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 mx-auto">		
+				<div class="bg-image overlay-secondary block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+				{{ with .Site.Params.about.background_image }}<img src="{{ . | absURL }}" alt="bg-image">{{ end }}
+				</div>
+			<div class="row align-items-center">
+				<div class="col-lg-4 mb-5 mb-lg-0 block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+					{{ with .Site.Params.about.image }}<img src="{{ . | absURL }}" alt="feature-image" class="img-fluid">{{ end }}
+				</div>
+				<div class="col-lg-7 offset-lg-1">
+				<div class="row">	
+					<div class="col-12">
+						<div class="section-heading mb-5">
+							{{ with .Site.Params.about.title }}<h1 class="title wow fadeInDown" style="text-align: left;" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+							{{ with .Site.Params.about.content }}<p class="wow fadeInDown" style="text-align: left;" data-wow-delay=".5s">{{ . | safeHTML }}</p>{{ end }}
+							<div class="section-border wow fadeInLeft" data-wow-delay=".7s"></div>
+						</div>
+					{{ if .Site.Data.feature.enable }}
+					{{ "<!-- Feature Section Start -->" | safeHTML }}
+					<section id="feature">
+						<div class="block">
+							<div class="row">
+								{{ range $index, $elemrnt := .Site.Data.feature.item }}
+								<div class="column">
+									{{ $delay := mul (add $index 1) 300 }}
+									<div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
+										<div class="media-left">
+											<div class="icon">
+												{{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+											</div>
+										</div>
+										<div class="media-body">
+											{{ with .title }}<h2>{{ . }}</h2>{{ end }}
+											{{ with .description }}<p>{{ . }}</p>{{ end }}
 										</div>
 									</div>
-									<div class="media-body">
-										{{ with .title }}<h4 class="media-heading">{{ . }}</h4>{{ end }}
-										{{ with .description }}<p>{{ . }}</p>{{ end }}
-									</div>
 								</div>
+								{{ end }}
 							</div>
-							{{ end }}
 						</div>
+					</section>
+					{{ "<!-- Feature Section End -->" | safeHTML }}
+					{{ end }}	
 					</div>
-				</section>
-				{{ "<!-- Feature Section End -->" | safeHTML }}
-				{{ end }}	
 				</div>
-			  </div>
+				</div>
 			</div>
-		  </div>
+			</div>
 		</div>
-	  </div>
+		</div>
 	</div>
   </section>
 

@@ -21,24 +21,24 @@ weight = 2
 [[menu.main]]
 name = "Events"
 url = "events/"
-weight = 5
+weight = 3
 
 [[menu.main]]
 name = "Spark Initiative"
 url = "spark-initiative/"
-weight = 6
+weight = 4
 
 [[menu.main]]
 name = "Contact"
 url = "contact/"
-weight = 7
+weight = 5
 
 
 # Site Params
 [params]
 home = "Home"
 logo = "images/Final Logo small.png"
-dateFormat = "02 January 2006"
+dateFormat = "2 January 2006, Monday"
 # Meta data
 description = "IEEE UNM"
 author = "?"
@@ -72,8 +72,8 @@ title = "Computer Science"
 # Homepage About Section
 [params.about]
 enable = true
-title = "WHO ARE WE?"
-content = "Inverted pendulums"
+title = "WHO ARE WE"
+content = "Our Vision & Mission"
 background_image = "images/IEEE Logo Only.svg"
 image = "images/Final Logo.png"
 
@@ -89,7 +89,7 @@ btnURL = "contact/"
 [params.portfolio]
 enable = true
 title = "Past Events"
-subtitle = "2022/2023"
+parent_dir = ["2022-2023","2023-2024"]
 
 # social icon
 [[params.socialIcon]]

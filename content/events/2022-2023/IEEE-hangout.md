@@ -5,6 +5,7 @@ draft: false
 category: [Events]
 type: portfolio
 image: "images/posters/IEEE Welcoming Night Poster.png"
+# zoom_in_image: "images/posters/IEEE Welcoming Night Poster_highres.png"
 content_images: ["images/events/2022-2023/IEEE_hangout_img1.jpg",
                  "images/events/2022-2023/IEEE_hangout_img2.jpg"]
 ---

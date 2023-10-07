@@ -1,7 +1,7 @@
 {{ if .Site.Params.cta.enable }}
 {{ "<!-- Call To Action Section Start -->" | safeHTML }}
 <section id="call-to-action">
-  <div class="container">
+  <div class="container" style="padding: 0; margin-top: 0px;">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
@@ -9,7 +9,7 @@
             data-wow-duration="500ms">{{ . }}</h1>{{ end }}
             {{ with .Site.Params.cta.content }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
               {{ . | safeHTML }}</p>{{ end }}
-            <a href="{{ .Site.Params.cta.btnURL }}" class="btn btn-default btn-contact wow fadeInDown"
+            <a href="{{ .Site.Params.cta.btnURL | absURL }}" class="btn btn-default btn-contact wow fadeInDown"
               data-wow-delay=".7s" data-wow-duration="500ms">{{ .Site.Params.cta.btnText }}</a>
         </div>
       </div>
