@@ -10,3 +10,14 @@ mail1 : support@timer.com
 mail2 : info@timer.com
 phone1: +07 052 245 022
 phone2: +07 052 245 025 
+
+socials:
+  - name: Instagram
+    username: ieee_unm
+    icon: ion-social-instagram
+    url: "https://www.instagram.com/ieee_unm/"
+
+  - name: LinkedIn
+    username: ieee-unm-student-branch
+    icon: ion-social-linkedin
+    url: "https://www.linkedin.com/company/ieee-unm-student-branch/?originalSubdomain=my"

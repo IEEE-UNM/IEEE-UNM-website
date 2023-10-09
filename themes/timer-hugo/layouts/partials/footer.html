@@ -18,7 +18,7 @@
         {{ "<!-- Social Media -->" | safeHTML }}
         <ul class="social text-center text-md-right text-lg-right">
           {{ range .Site.Params.socialIcon }}
-          <li><a href="{{ .url | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a href="{{ .url | safeURL }}" target="_blank"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
       </div>
