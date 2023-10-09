@@ -30,7 +30,7 @@
         <!-- post images -->
         {{ if ne .Params.content_images nil }}
           <div class="post-img">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <!-- Image Carousel Indicators -->
             <ol class="carousel-indicators">
               {{ range  $index, $image := .Params.content_images }}

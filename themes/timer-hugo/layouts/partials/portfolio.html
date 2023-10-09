@@ -6,7 +6,7 @@
 			{{ with .Site.Params.portfolio.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
 		</div>	
 
-		<div id="pastEventCarousel" class="carousel carousel slide  wow fadeInLeft" data-wow-delay=".5s" data-ride="carousel">	
+		<div id="pastEventCarousel" class="carousel carousel slide  wow fadeInLeft" data-wow-delay=".5s" data-interval="false">	
 			{{ $parent_dir := slice }}
 			{{ $element := where .Site.RegularPages "Type" "portfolio"}}
 			{{ range $e := $element }} {{ $parent_dir = $parent_dir | append (path.Dir .) }} {{ end }}
