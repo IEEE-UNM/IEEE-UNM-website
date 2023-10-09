@@ -1,18 +1,78 @@
-enable  : true
-title   : About Us
-description: >
-    Please sponsor we are broke
+content:
+  - title   : About Us
+    #description: IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
+    enable  : true
+    #bg_image: about/23-24_committee.jpg
+    image   : images/Final Logo.png
+    button:
+      enable: false
+      label: "View Works"
+      link: "project/"
+    list:
+      enable: true
+      bullet_icon: ion-ios-bolt
+      point:
+        - IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
+        - bro
 
-image   : images/IEEE Banner Design.png
-aboutItem:
-  - title : Why Choose Us
-    description: > 
-      #WhyNott
+  - title: Aim
+    description: IEEE aims to foster technological innovation and excellence for the benefit of humanity
+    enable: true
+    #bg_image: about/23-24_committee_banner.png
+    bg_image: about/23-24_committee.jpg
+    image: about/aim.png
+    #icon: ion-pinpoint 
+    button:
+      enable: false
+      label: "View Works"
+      link: "project/"
 
-  - title : What You Get
-    description: > 
-      Brain damage
+  - title: Objectives
+    description: IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
+    enable: true
+    #bg_image: about/23-24_committee.jpg
+    image   : about/objective.png
+    button:
+      enable: false
+      label: "View Works"
+      link: "project/"
+    list:
+      enable: true
+      bullet_icon: ion-android-checkmark-circle
+      point:
+        - yo
+        - bro
 
-  - title : Meet The Energy
-    description: > 
-      Slay
+  - title: Vision
+    description: IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
+    enable: true
+    bg_image: about/23-24_committee.jpg
+    image   : about/eye.png
+    button:
+      enable: false
+      label: "View Works"
+      link: "project/"
+
+  - title: Mission
+    description: IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
+    enable: true
+    #bg_image: about/23-24_committee.jpg
+    image   : about/rocket.png
+    button:
+      enable: false
+      label: "View Works"
+      link: "project/"
+
+# aboutItem:
+#   - title : Why Choose Us
+#     description: > 
+#       #WhyNott
+
+#   - title : What You Get
+#     description: > 
+#       Brain damage
+
+#   - title : Meet The Energy
+#     description: > 
+#       Slay
+
