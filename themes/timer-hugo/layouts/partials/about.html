@@ -26,7 +26,6 @@
 						<div class="block">
 							<div class="row">
 								{{ range $index, $elemrnt := .Site.Data.feature.item }}
-								<div class="column">
 									{{ $delay := mul (add $index 1) 300 }}
 									<div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
 										<div class="media-left">
@@ -37,7 +36,6 @@
 										<div class="media-body">
 											{{ with .title }}<h2>{{ . }}</h2>{{ end }}
 											{{ with .description }}<p>{{ . }}</p>{{ end }}
-										</div>
 									</div>
 								</div>
 								{{ end }}

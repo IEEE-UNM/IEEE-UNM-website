@@ -52,11 +52,11 @@ author = "IEEE UNM SB"
 [params.banner]
 enable = true
 bgImage = "images/bg1.jpg"
-heading = "UNM IEEE Student Branch"
-description = "To foster technological innovation and excellence for the benefit of humanity."
+heading = "IEEE UNM Student Branch"
+description = "Technological Innovation and Excellence for the Benefit of Humanity."
 # button
 btn = true
-btnText = "ABOUT US"
+btnText = "MORE ABOUT US"
 btnURL = "about/"
 
 # flip text on hero banner
@@ -72,8 +72,8 @@ title = "Computer Science"
 # Homepage About/Hero Section
 [params.about]
 enable = true
-title = "WHO ARE WE"
-content = "Our Vision & Mission"
+title = "Vision & Mission"
+#content = 
 background_image = "images/IEEE Logo Only.svg"
 image = "images/Final Logo.png"
 
@@ -81,7 +81,7 @@ image = "images/Final Logo.png"
 [params.cta]
 enable = true
 title = "CONTACT US"
-content = "Please"
+#content = "Please"
 btnText = "Contact us"
 btnURL = "contact/"
 

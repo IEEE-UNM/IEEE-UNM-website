@@ -568,6 +568,7 @@ figure {
 figure .img-wrapper {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 figure img {

@@ -4,13 +4,13 @@ department:
   - dept_name: Executive
     members  :
     - name  : Harthi Ganesh
-      image : about/Harthi.png
+      image : images/about/Harthi.png
       designation : President
       description : 
       linkedIn    : https://www.linkedin.com/in/harthiganesh
     
     - name  : Lye Wen Hao
-      image : about/Wen Hao.png
+      image : images/about/Wen Hao.png
       designation : Vice President
       description : 
       linkedIn    : https://www.linkedin.com/in/lye-wen-hao-20437b247
@@ -22,13 +22,13 @@ department:
       linkedIn    : https://www.linkedin.com/in/syaza-emira-880936a9
 
     - name  : Caitlin Pon May Yean
-      image : about/Caitlin.png
+      image : images/about/Caitlin.png
       designation : Assistant Secretary
       description : 
       linkedIn    : 
     
     - name  : Careen Chin San Qian
-      image : about/Careen.png
+      image : images/about/Careen.png
       designation : Treasurer
       description : 
       linkedIn    :
@@ -76,19 +76,19 @@ department:
   - dept_name: Technical
     members  :
     - name  : Tan Hong Kai
-      image : about/Hong Kai.png
+      image : images/about/Hong Kai.png
       designation : Head of Technical
       description : 
       linkedIn    :
 
     - name  : Goh Zhen Hong
-      image : about/Zhen Hong.png
+      image : images/about/Zhen Hong.png
       designation : Technical Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/goh-zhen-hong-8a664422a
 
     - name  : Ng Chin Yuen
-      image : about/Chin Yuen.png
+      image : images/about/Chin Yuen.png
       designation : Technical Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/chin-yuen-ng-137384240

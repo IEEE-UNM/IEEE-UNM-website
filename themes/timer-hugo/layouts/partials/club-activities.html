@@ -16,7 +16,7 @@
 
 			{{ range .Site.Data.club_activities.club_activities_item }}
 			{{"<!-- club_activities item -->" | safeHTML}}
-			<div class="col-lg-4 text-center wow fadeInLeft" data-wow-duration="700ms">
+			<div class="col-lg-3 col-sm-6 text-center wow fadeInLeft" data-wow-duration="700ms" style="display: grid;">
 				<div class="block">
 					<div class="icon-box">
 						{{with .icon}}<i class="{{ . }}"></i>{{ end }}

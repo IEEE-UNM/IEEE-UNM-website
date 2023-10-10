@@ -1,14 +1,13 @@
 enable  : true
 title   : Our Vision & Mission
-subtitle: >
-  subtitle
+subtitle: 
 item    :
   - icon  : ion-ios-eye
     title : Vision
-    description : >
-      50/50
+    description : To create a rapport community that fosters great teamwork and inspires lifelong-learning in
+                  the field of Electrical and Electronic Engineering. 
 
   - icon  : ion-android-locate
     title : Mission
-    description : >
-      Financial Independence
+    description : IEEE UNM SB organises participant-centered events and activities that will benefit the participants
+                  in their professional and personal development.
