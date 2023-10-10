@@ -1,6 +1,6 @@
-baseURL = 'https://IEEEUNM.com/'
+baseURL = 'https://IEEEUNMSB.com/'
 languageCode = 'en-us'
-title = 'IEEE UNM'
+title = 'IEEE UNM SB'
 theme = ["timer-hugo"]
 # post pagination
 paginate = "3" # see https://gohugo.io/extras/pagination/
@@ -40,12 +40,12 @@ home = "Home"
 logo = "images/Final Logo small.png"
 dateFormat = "2 January 2006, Monday"
 # Meta data
-description = "IEEE UNM"
-author = "?"
+description = "IEEE UNM SB Website"
+author = "IEEE UNM SB"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+# googleAnalitycsID = "Your ID"
 # contact form action
-contactFormAction = "#" # contact form works with https://formspree.io
+# contactFormAction = "#" # contact form works with https://formspree.io
 
 
 # Banner Section
@@ -53,13 +53,13 @@ contactFormAction = "#" # contact form works with https://formspree.io
 enable = true
 bgImage = "images/bg1.jpg"
 heading = "UNM IEEE Student Branch"
-description = "Our core purpose is to foster technological innovation and excellence for the benefit of humanity."
+description = "To foster technological innovation and excellence for the benefit of humanity."
 # button
 btn = true
 btnText = "ABOUT US"
 btnURL = "about/"
 
-# flip text
+# flip text on hero banner
 [[params.banner.flipText]]
 title = "Electrical"
 [[params.banner.flipText]]
@@ -69,7 +69,7 @@ title = "Mechatronic"
 [[params.banner.flipText]]
 title = "Computer Science"
 
-# Homepage About Section
+# Homepage About/Hero Section
 [params.about]
 enable = true
 title = "WHO ARE WE"
@@ -77,7 +77,7 @@ content = "Our Vision & Mission"
 background_image = "images/IEEE Logo Only.svg"
 image = "images/Final Logo.png"
 
-# Call to Action
+# Call to Action before footer 
 [params.cta]
 enable = true
 title = "CONTACT US"
@@ -85,13 +85,13 @@ content = "Please"
 btnText = "Contact us"
 btnURL = "contact/"
 
-# Portfolio Section On Homepage
+# Past Events Section On Homepage
 [params.portfolio]
 enable = true
 title = "Past Events"
 parent_dir = ["2022-2023","2023-2024"]
 
-# social icon
+# footer social icon
 [[params.socialIcon]]
 icon = "ion-social-instagram"
 url = "https://www.instagram.com/ieee_unm/"
