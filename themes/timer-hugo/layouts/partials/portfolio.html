@@ -32,9 +32,9 @@
 				{{ if eq (path.Dir $e) $dir }}
 					<div class="col-md-4 col-sm-6" style="display: flex;">
 						{{ $delay := mul $index 300 }}
-						<figure class="animated portfolio-item">
+						<figure class="animated portfolio-item" style="width: 100%;">
 							<div class="img-wrapper">
-								<img src="{{ $e.Params.Image | relURL }}" class="img-fluid" alt="this is a title">
+								<img src="{{ $e.Params.Image | relURL }}" class="img-fluid" alt="this is a title" style="max-height: 360px;">
 								<div class="overlay">
 									<div class="buttons">
 										{{ if isset $e.Params "zoom_in_image" }}

@@ -27,7 +27,7 @@
                         <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
                             <div class="card">
                                 <div class="row g-0">
-                                <div class="col-md-5">
+                                <div class="col-md-5 justify-content-center">
                                     <img src="{{ .poster | absURL }}" class="img-fluid rounded-start" alt="Slide {{ add $index 1}}">
                                 </div>
                                 <div class="col-md-7">
@@ -37,8 +37,8 @@
 			                            {{"<!-- if event is within 1 day -->" | safeHTML}}
                                         <h3><b>Date: </b>{{ dateFormat (.Site.Params.dateFormat | default  "2 January 2006 (Monday)") .start_date }}</h3>
                                         <h3><b>Time: </b>
-                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04") .start_date}} to 
-                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04 (MST)") .end_date }}
+                                            {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .start_date}} to 
+                                            {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .end_date }}
                                         </h3>
                                     {{ else }}
                                         <h3><b>Date: </b>
@@ -46,13 +46,17 @@
                                             {{ dateFormat (.Site.Params.dateFormat | default  "2 January (Monday) 2006") .end_date }}
                                         </h3>
                                         <h3><b>Time: </b>
-                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04") .start_date}} to 
-                                            {{ dateFormat (.Site.Params.timeFormat | default "15:04 (MST)") .end_date }}
+                                            {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .start_date}} to 
+                                            {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .end_date }}
                                         </h3>
                                     {{ end }}
                                     <h3><b>Venue: </b> {{ .venue }} </h3>
                                     <div class="section-border" style="margin: 20px 0 10px;"></div>
                                     <p>{{ .content | markdownify }}</p>
+                                    {{ if .btn }}
+                                    <a class="btn-lines dark light animated btn btn-default btn-green hvr-bounce-to-right" href="{{ .btnURL }}"
+                                      target="_blank">{{ .btnText }}</a>
+                                    {{ end }}
                                 </div>
                                 </div>
                                 </div>

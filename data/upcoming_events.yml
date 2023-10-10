@@ -1,23 +1,24 @@
 enable : true
 title : Upcoming Events
 items :
-- poster : images/posters/IEEE Tech Talk.png
-  title : Event 1
-  start_date : 2022-10-28T20:00:00+08:00
-  end_date : 2022-10-28T20:30:00+08:00
+- poster : images/posters/2023-2024/Welcoming night Poster.png
+  title : IEEE's Hangout - Welcoming Night
+  start_date : 2023-10-12T20:00:00+08:00
+  end_date : 2023-10-12T21:30:00+08:00
   num_days : 1
-  venue : F4
-  content : We organize talks, industrial visits, forums, and many other exciting events.
+  venue : F1A02
+  content : 
   btn : true
   btnText : "Register Here"
-  btnURL : "events/"
-- poster : images/posters/womens-day.png
-  title : Event 2
-  start_date : 2022-10-28T20:00:00+08:00
-  end_date : 2022-10-28T20:30:00+08:00
+  btnURL : https://forms.gle/eoMwheftZ3jaAgAn6
+
+- poster : images/posters/2023-2024/EMC Basics Talk Poster.png
+  title : Electromagnetic Compatibility Basics Talk
+  start_date : 2023-10-18T10:30:00+08:00
+  end_date : 2023-10-18T12:00:00+08:00
   num_days : 1
-  venue : F4
-  content : We organize talks, industrial visits, forums, and many other exciting events.
-  btn : true
+  venue : F3C06
+  content : 
+  btn : false
   btnText : "Register Here"
   btnURL : "events/"

@@ -2,7 +2,7 @@ content:
   - title   : About Us
     #description: IEEE UNM SB stands for the Institute of Electrical & Electronics Engineering, University of Nottingham Student Branch.
     enable  : true
-    #bg_image: about/23-24_committee.jpg
+    #bg_image: images/about/23-24_committee.jpg
     image   : images/Final Logo.png
     button:
       enable: false
@@ -22,9 +22,9 @@ content:
     description: Aligned with the mission of IEEE, IEEE UNM SB aims to foster technological innovation 
                   and excellence for the benefit of humanity.
     enable: true
-    #bg_image: about/23-24_committee_banner.png
-    bg_image: about/23-24_committee.jpg
-    image: about/aim.png
+    #bg_image: images/about/23-24_committee_banner.png
+    bg_image: images/about/23-24_committee.jpg
+    image: images/about/aim.png
     #icon: ion-pinpoint 
     button:
       enable: false
@@ -34,8 +34,8 @@ content:
   - title: Objectives
     #description: 
     enable: true
-    #bg_image: about/23-24_committee.jpg
-    image   : about/objective.png
+    #bg_image: images/about/23-24_committee.jpg
+    image   : images/about/objective.png
     button:
       enable: false
       label: "View Works"
@@ -54,19 +54,19 @@ content:
     description: To create a rapport community that fosters great teamwork and inspires lifelong-learning in
                   the field of Electrical and Electronic Engineering. 
     enable: true
-    bg_image: about/23-24_committee.jpg
-    image   : about/eye.png
+    bg_image: images/about/23-24_committee.jpg
+    image   : images/about/eye.png
     button:
       enable: false
       label: "View Works"
       link: "project/"
 
   - title: Mission
-    description: IEEE UNM SB organises participant-centered events and activities that will benefit its participants
+    description: IEEE UNM SB organises participant-centered events and activities that will benefit the participants
                   in their professional and personal development.
     enable: true
-    #bg_image: about/23-24_committee.jpg
-    image   : about/rocket.png
+    #bg_image: images/about/23-24_committee.jpg
+    image   : images/about/rocket.png
     button:
       enable: false
       label: "View Works"
