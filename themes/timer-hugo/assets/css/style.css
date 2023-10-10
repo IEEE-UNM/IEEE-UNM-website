@@ -218,7 +218,7 @@ a:hover {
 }
 
 .about-page .block, .about-page-content .block {
-  padding: 0 40px 0;
+  padding: 10px 40px ;
   margin: auto;
 }
 
@@ -1291,20 +1291,16 @@ article {
 }
 
 .team-member {
-  margin: 30px 0;
-}
-
-.team-member:hover .team-img img {
-  opacity: .8;
+  margin: 0;
 }
 
 .team-member .team-img {
   position: relative;
-  margin-bottom: 20px;
+  margin: 10px 0 0;
 }
 
 .team-member .team-img .team-pic {
-  width: 100%;
+  width: 80%;
 }
 
 .team-member .team_designation {
@@ -1322,11 +1318,10 @@ article {
 }
 
 .team-member .social-icons a {
-  background: #0043ae;
-  color: #fff;
   padding: 4px 8px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 30px;
+  color: #fff;
 }
 
 .team-member .social-icons .facebook {
@@ -1349,6 +1344,15 @@ article {
   padding: 0 10px
 }
 
+.tabCommon .nav-tabs li a {
+  width: 150px;
+  border-radius: 8px 8px 0 0;
+  padding: 10px;
+  color: #0043ae;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
 .tabCommon .nav-tabs li a:active {
   color: #fff;
   background-color: #0043ae;
@@ -1357,15 +1361,6 @@ article {
 .tabCommon .nav-tabs li a.active {
   color: #fff;
   background-color: #0043ae;
-}
-
-.tabCommon .nav-tabs li a {
-  width: 150px;
-  border-radius: 8px 8px 0 0;
-  padding: 10px;
-  color: #0043ae;
-  background-color: #fff;
-  border: 1px solid transparent;
 }
 
 .tabCommon .nav-tabs li a:hover {
@@ -1684,5 +1679,6 @@ ul.social-icons li {
 
 .content-text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: justify;
 }

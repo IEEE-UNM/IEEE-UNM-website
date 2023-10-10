@@ -6,7 +6,7 @@
 			{{ with .Site.Params.portfolio.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
 		</div>	
 
-		<div id="pastEventCarousel" class="carousel carousel slide  wow fadeInLeft" data-wow-delay=".5s" data-interval="false">	
+		<div id="pastEventCarousel" class="carousel carousel slide wow fadeInLeft" data-wow-delay=".5s" data-interval="false">	
 			{{ $parent_dir := slice }}
 			{{ $element := where .Site.RegularPages "Type" "portfolio"}}
 			{{ range $e := $element }} {{ $parent_dir = $parent_dir | append (path.Dir .) }} {{ end }}
@@ -63,21 +63,19 @@
 				</div>
 			</div>
 			{{ end }}
-		</div>
+			</div>
 
-			
 			<!-- Carousel Button -->
-			<a class="carousel-control-prev" style="width: 45%; align-items: baseline;" href="#pastEventCarousel" role="button" data-slide="prev">
+			<a class="carousel-control-prev" style="width: 45%; align-items: baseline; height: min-content;" href="#pastEventCarousel" role="button" data-slide="prev">
 				<span class="carousel-control-icon ion-ios-arrow-back" style="font-size: 50px;" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 			</a>
-			<a class="carousel-control-next" style="width: 45%; align-items: baseline;" href="#pastEventCarousel" role="button" data-slide="next">
+			<a class="carousel-control-next" style="width: 45%; align-items: baseline; height: min-content;" href="#pastEventCarousel" role="button" data-slide="next">
 				<span class="carousel-control-icon ion-ios-arrow-forward" style="font-size: 50px;" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
 
-
-		</div>	
+		</div>
 	</div>
 </section>
 {{ "<!-- Portfolio Section End -->" | safeHTML }}

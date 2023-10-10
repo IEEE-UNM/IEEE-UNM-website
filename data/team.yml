@@ -3,40 +3,92 @@ title   : MEET THE TEAM
 department: 
   - dept_name: Executive
     members  :
-    - name  : Jonathon Andrew
-      image : images/team/team-1.jpg
-      designation : CEO, Project Manager
-      description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      facebook    : https://www.fb.com/themefisher
-      twitter     : https://www.twitter.com/themefisher
-      linkedIn    : https://www.linkedin.com/themefisher
-      googleplus  : https://plus.google.com/themefisher
+    - name  : Harthi Ganesh
+      image : about/Harthi.png
+      designation : President
+      description : 
+      linkedIn    : https://www.linkedin.com/in/harthiganesh
     
-    - name  : Jesmin Martina
-      image : images/team/team-2.jpg
-      designation : CEO, Project Manager
-      description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      facebook    : https://www.fb.com/themefisher
-      twitter     : https://www.twitter.com/themefisher
-      linkedIn    : https://www.linkedin.com/themefisher
-      googleplus  : https://plus.google.com/themefisher
+    - name  : Lye Wen Hao
+      image : about/Wen Hao.png
+      designation : Vice President
+      description : 
+      linkedIn    : https://www.linkedin.com/in/lye-wen-hao-20437b247
+
+    - name  : Syaza Emira
+      image : 
+      designation : Secretary
+      description : 
+      linkedIn    : https://www.linkedin.com/in/syaza-emira-880936a9
+
+    - name  : Caitlin Pon May Yean
+      image : about/Caitlin.png
+      designation : Assistant Secretary
+      description : 
+      linkedIn    : 
     
+    - name  : Careen Chin San Qian
+      image : about/Careen.png
+      designation : Treasurer
+      description : 
+      linkedIn    :
+
+#######
+
   - dept_name: Events
     members  :
-    - name  : Deu John
-      image : images/team/team-3.jpg
-      designation : CEO, Project Manager
-      description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      facebook    : https://www.fb.com/themefisher
-      twitter     : https://www.twitter.com/themefisher
-      linkedIn    : https://www.linkedin.com/themefisher
-      googleplus  : https://plus.google.com/themefisher
+    - name  : Wong Zhi Yuan
+      image : 
+      designation : Head of Events
+      description : 
+      linkedIn    : https://www.linkedin.com/in/zhi-yuan-wong-8a5178224
 
-    - name  : Anderson Martin
-      image : images/team/team-4.jpg
-      designation : CEO, Project Manager
-      description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      facebook    : https://www.fb.com/themefisher
-      twitter     : https://www.twitter.com/themefisher
-      linkedIn    : https://www.linkedin.com/themefisher
-      googleplus  : https://plus.google.com/themefisher
+    - name  : Lee Shi Min
+      image : 
+      designation : Events Executive
+      description : 
+      linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
+
+    - name  : Lee Loo Bee
+      image : 
+      designation : Events Executive
+      description : 
+      linkedIn    : https://www.linkedin.com/in/loobeelee
+
+#######
+
+  - dept_name: Marketing
+    members  :
+    - name  : Jazlynn Leong Xin Er
+      image : 
+      designation : Head of Marketing
+      description : 
+      linkedIn    : https://www.linkedin.com/in/jazlynn-xin-er-leong-539b33266
+
+    - name  : Nur Sabrina
+      image :
+      designation : Marketing Executive
+      description : 
+      linkedIn    : 
+
+#####
+
+  - dept_name: Technical
+    members  :
+    - name  : Tan Hong Kai
+      image : about/Hong Kai.png
+      designation : Head of Technical
+      description : 
+      linkedIn    :
+
+    - name  : Goh Zhen Hong
+      image : about/Zhen Hong.png
+      designation : Technical Executive
+      description : 
+      linkedIn    : https://www.linkedin.com/in/goh-zhen-hong-8a664422a
+
+    - name  : Ng Chin Yuen
+      image : about/Chin Yuen.png
+      designation : Technical Executive
+      description : 
+      linkedIn    : https://www.linkedin.com/in/chin-yuen-ng-137384240
