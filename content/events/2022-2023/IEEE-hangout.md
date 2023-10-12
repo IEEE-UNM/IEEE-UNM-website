@@ -2,7 +2,7 @@
 title: "IEEE Welcoming Night: Hang Out With IEEE"
 date: 2022-10-28T20:00:00+08:00
 draft: false
-category: [Events]
+tags: [Hangout, Induction]
 type: portfolio
 image: "images/posters/2022-2023/IEEE Welcoming Night Poster.png"
 # zoom_in_image: "images/posters/IEEE Welcoming Night Poster_highres.png"

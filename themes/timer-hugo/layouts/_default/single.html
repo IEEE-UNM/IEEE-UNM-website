@@ -2,16 +2,18 @@
 
 {{ "<!-- Page Header -->" | safeHTML }}
 <section class="global-page-header">
-  <div class="container">
+  <div class="container mt-0">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
           <h2>{{ .Title }}</h2>
           <div class="portfolio-meta">
-			<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>|
-			<span> Tags:
-				{{ if ne .Params.category nil }}{{ delimit .Params.category ", " }}{{ end }}
-			</span>
+						<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>|
+            <span> 
+              {{ if ne .Params.tags nil }}
+              Tags: {{ delimit .Params.tags ", " }}
+              {{ end }}
+            </span>
           </div>
         </div>
       </div>
@@ -33,15 +35,15 @@
           <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <!-- Image Carousel Indicators -->
             <ol class="carousel-indicators">
-              {{ range  $index, $image := .Params.content_images }}
+              {{ range  $index, $url := .Params.content_images }}
               <li data-target="#carouselExampleIndicators" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active" {{ end }}></li> 
               {{ end }}
             </ol>
             <!-- Image -->
             <div class="carousel-inner">
-              {{ range  $index, $image := .Params.content_images }}
+              {{ range  $index, $url := .Params.content_images }}
               <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
-                <img class="img-fluid w-100" src="{{ $image | absURL }}" alt="work-single-image">
+                <img class="img-fluid w-100" src="{{ $url | absURL }}" alt="Slide {{ add $index 1}}">
               </div>
               {{ end }}
             </div>

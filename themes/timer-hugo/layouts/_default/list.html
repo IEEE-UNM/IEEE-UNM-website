@@ -5,45 +5,74 @@
 <section id="blog-full-width">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				{{ $paginator:= .Paginate .Data.Pages }}
-				{{ range $paginator.Pages }}
-				<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+		{{ $paginator:= .Paginate .Data.Pages }}
+		{{ range $paginator.Pages }}
 
-					<div class="blog-post-image">
-						<a href="{{ .Permalink }}">
-							{{ with .Params.image }}<img class="img-fluid" src="{{ . | absURL }}" alt="post-image" />{{ end }}
-						</a>
+		<!-- large card -->
+		{{ if eq .Params.type "section" }}
+			<div class="col-md-12 mb-5 wow fadeInDown" style="text-align: center;" data-wow-delay=".3s" data-wow-duration="500ms"> 
+				<div class="card">
+					<figure class="animated mb-0">
+						<div class="img-wrapper">
+							<div>
+								{{ with .Params.image }}
+								<img class="card-img-top" style="object-fit: contain; max-height: 500px;" src="{{ . | absURL }}" alt="Card image top" />
+								{{ end }}
+							</div>
+							<div class="overlay">
+								<div class="buttons">						
+									{{ with .Permalink }}<a href="{{ . }}" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue
+									Reading</a>{{ end }}
+								</div>
+							</div>
+						</div>
+					</figure>
+					<div class="card-body">
+						<h1 class="card-title blog-content">{{ .Title }}</h1>
 					</div>
-					<div class="blog-content">
-						<h2 class="blogpost-title">
-							<a href="{{ .Permalink }}">{{ .Title }}</a>
-						</h2>
+				</div>
+			</div>
+
+		{{ else }}
+				
+			<!-- small card -->
+			<div class="card-deck wow fadeInDown col-md-4 mx-auto" style="min-width: 350px; padding: 0 0 40px" data-wow-delay=".3s" data-wow-duration="500ms">
+				<div class="card">
+					<div class="blog-post-image">
+						{{ with .Params.image }}
+						<img class="card-img-top" style="object-fit: contain; max-height: 360px;" src="{{ . | absURL }}" alt="Card image cap">
+						{{ end }}
+					</div>
+					<div class="card-body blog-content">
+						<a href="{{ .Permalink }}"><h5 class="card-title" style="padding: 0 0 10px;">{{ .Title }}</h5></a>						
 						<div class="blog-meta">
-							<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
-							{{ with .Params.author }}<span>by
-								{{ . }}
-							</span>
-							{{ end }}
-							{{ with .Params.tags }}
-							<span>
-								{{ delimit . ", " }}
-							</span>
+							{{ if isset .Params "date" }}
+							<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span> 
 							{{ end }}
 						</div>
-						<p>
+						<div class="blog-meta">	
+							<span> 
+								{{ if ne .Params.tags nil }}
+								Tags: {{ delimit .Params.tags ", " }}
+								{{ end }}
+							</span>
+						</div>
+						<p class="card-text" style="text-align: justify; padding: 10px 0;">
 							{{ .Summary }}
 						</p>
+					</div>
+					<div class="card-footer">
 						{{ with .Permalink }}<a href="{{ . }}" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue
 							Reading</a>{{ end }}
 					</div>
-				</article>
-				{{ end }}
+				</div>
+			</div>	
+		{{ end }}
+		{{ end }}
 
-				<!-- pagination -->
-				{{ template "_internal/pagination.html" . }}
-			</div>
 		</div>
+		<!-- pagination -->
+		{{ template "_internal/pagination.html" . }}
 	</div>
 </section>
 

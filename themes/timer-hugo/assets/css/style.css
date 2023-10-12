@@ -146,7 +146,7 @@ a:hover {
   font-size: 42px;
   font-weight: bold;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .global-page-header .breadcrumb {
@@ -278,7 +278,6 @@ a:hover {
   /* font-size: 14px; */
   font-weight: 500;
   transition: .3s all;
-  text-transform: uppercase;
   padding: 5px 15px;
   display: block;
 }
@@ -622,10 +621,12 @@ figure .overlay:hover a {
 }
 
 figure .buttons {
-  margin-top: 40%;
+  /* margin-top: 40%; */
   text-align: center;
   transform: translateY(-50%);
   display: inline-block;
+  top: 50%;
+  position: relative;
 }
 
 figure .buttons a:hover {
@@ -750,11 +751,10 @@ article {
 .blog-content .blog-meta {
   color: #9a9a9a;
   font-weight: 300;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .blog-content .blog-meta span:after {
-  content: '/';
   padding: 0 3px 0 6px;
 }
 
@@ -776,11 +776,6 @@ article {
   margin-top: 15px;
   border: 1px solid #fff;
   box-shadow: 0px 0px 0px 1px #0043ae;
-}
-
-.blog-post-image {
-  margin-top: 30px;
-  margin-bottom: 20px;
 }
 
 .sidebar {
@@ -981,6 +976,11 @@ article {
 
 .gallery figure .buttons {
   left: 40%;
+}
+
+.portfolio-meta {
+  padding: 8px 0;
+  margin-bottom: 16px;
 }
 
 .portfolio-meta span {

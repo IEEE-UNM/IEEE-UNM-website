@@ -4,6 +4,7 @@ title = 'IEEE UNM SB'
 theme = ["timer-hugo"]
 # post pagination
 paginate = "3" # see https://gohugo.io/extras/pagination/
+summaryLength = 20
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
