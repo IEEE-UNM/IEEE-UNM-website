@@ -22,12 +22,12 @@
                     </ol>
 
                     <!-- add cards -->
-                    <div class="carousel-inner">
+                    <div class="carousel-inner mx-auto" style="width: 80%;">
                         {{ range $index, $item := .Site.Data.upcoming_events.items }}
                         <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
                             <div class="card">
                                 <div class="row g-0">
-                                <div class="col-md-5 justify-content-center">
+                                <div class="col-md-5 justify-content-center" style="margin: auto;">
                                     <img src="{{ .poster | absURL }}" class="img-fluid rounded-start" alt="Slide {{ add $index 1}}">
                                 </div>
                                 <div class="col-md-7">
