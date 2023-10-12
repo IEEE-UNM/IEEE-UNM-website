@@ -4,10 +4,12 @@ date: 2022-10-28T20:00:00+08:00
 draft: false
 tags: [Hangout, Induction]
 type: portfolio
-image: "images/posters/2022-2023/IEEE Welcoming Night Poster.png"
-# zoom_in_image: "images/posters/IEEE Welcoming Night Poster_highres.png"
-content_images: ["images/events/2022-2023/IEEE_hangout_img1.jpg",
-                 "images/events/2022-2023/IEEE_hangout_img2.jpg"]
+image: images/posters/2022-2023/IEEE Welcoming Night Poster.png
+# zoom_in_image: "images/posters/2022-2023/IEEE Welcoming Night Poster_highres.png"
+content_images: ["images/posters/2022-2023/IEEE Welcoming Night Poster_highres.png",
+                "images/events/2022-2023/IEEE_hangout_img1.jpg",
+                "images/events/2022-2023/IEEE_hangout_img2.jpg"]
+content_text: [Event Poster,Game Time!]
 ---
 
 

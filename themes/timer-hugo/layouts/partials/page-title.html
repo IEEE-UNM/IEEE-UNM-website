@@ -12,6 +12,14 @@
                 Home &nbsp; &nbsp;/
               </a>
             </li>
+            {{ with .Parent }}
+            {{ if not (eq .Title .Site.Title) }}
+              <li class="list-inline-item">              
+                <a href="{{ .Permalink }}">{{ .Title }} &nbsp; &nbsp;/
+                </a>
+              </li>
+            {{ end }}
+            {{ end }}
             <li class="active list-inline-item">{{ .Title }}</li>
           </ol>
         </div>

@@ -44,19 +44,25 @@
 						{{ end }}
 					</div>
 					<div class="card-body blog-content">
-						<a href="{{ .Permalink }}"><h5 class="card-title" style="padding: 0 0 10px;">{{ .Title }}</h5></a>						
-						<div class="blog-meta">
+						<a href="{{ .Permalink }}"><h5 class="card-title">{{ .Title }}</h5></a>						
+						<div class="card-text mb-1">
 							{{ if isset .Params "date" }}
 							<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span> 
 							{{ end }}
 						</div>
-						<div class="blog-meta">	
-							<span> 
-								{{ if ne .Params.tags nil }}
-								Tags: {{ delimit .Params.tags ", " }}
-								{{ end }}
-							</span>
+
+						<div class="card-text mb-3">
+							{{ if ne .Params.tags nil }}
+							<span style="margin-right: 0.5rem;">Tags:  </span>
+							{{ range .Params.tags }}
+							<div class="badge badge-pill category-tag" style="color: #0043ae;">	
+								<span> 
+									{{ . }} 
+								</span>
+							</div>
+							{{ end }}
 						</div>
+						{{ end }}
 						<p class="card-text" style="text-align: justify; padding: 10px 0;">
 							{{ .Summary }}
 						</p>
