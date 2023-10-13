@@ -1,12 +1,9 @@
 ---
-title: "Spark Initiative 2022-2023"
+title: "DIY Arcade Machine Setup"
 date: 2023-02-09T14:33:20+08:00
-end_date: 2023-05-05
 draft: false
 weight: 20
-type: section
-tags: ["Spark Initiative"]
+tags: [Spark Initiative, Project Setup]
 image: images/spark/2022-2023/grp_photo1.jpg
 ---
 
-# Week 24
