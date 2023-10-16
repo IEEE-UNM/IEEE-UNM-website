@@ -1,9 +1,0 @@
----
-title: "Spark Initiative 2022-2023"
-date: 2023-02-09T14:33:20+08:00
-end_date: 2023-05-05
-draft: false
-type: section
-tags: ["Spark Initiative"]
-image: images/spark/2022-2023/grp_photo1.jpg
----

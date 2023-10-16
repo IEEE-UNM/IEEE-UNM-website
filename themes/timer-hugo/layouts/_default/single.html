@@ -8,7 +8,10 @@
         <div class="block">
           <h2>{{ .Title }}</h2>
           <div class="portfolio-meta">
+            {{ with .Params.subtitle}}<span> {{ . }} </span>{{ end }}
+            {{ if isset .Params "date" }}
 						<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+            {{ end }}
           </div>
         </div>
       </div>
@@ -21,14 +24,36 @@
 <section class="single-post">
   <div class="container"  style="margin-bottom: 50px;">
     <div class="row">
-      <div class="col-md-8" style="padding-right: 30px;">
 
+      
+      {{ "<!-- Table of Content Section Start -->" | safeHTML }}
+      {{ if .Params.toc }}
+      <div class="col-md-3">
+          <div class="toc wow fadeInLeft" data-wow-delay=".7s">
+              <a href="#title" style="color: black;"> <h4>Table of Contents</h4> </a>
+              <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>
+                {{ .TableOfContents}}
+          </div>
+      </div>
+      
+      <div class="col-md-1" style="padding:15px; max-width: 0px;"></div>
+      {{ end }}
+
+
+      {{ "<!-- Content Section Start -->" | safeHTML }}
+      <div class="col-md-8" style="padding-right: 30px;">
         <!-- section heading -->
         <div class="blog-heading mb-5 wow fadeInDown" data-wow-delay=".3s">
-          {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+
+          {{ with .Title }}<h1 id="title">{{ . }}</h1>{{ end }}
+
           <div class="blog-content blog-meta">
+            {{ with .Params.subtitle}}<span>{{ . }}</span>{{ end }}
+            {{ if isset .Params "date" }}
 						<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+            {{ end }}
           </div>
+
         </div>
 
         <!-- post images -->
@@ -70,7 +95,6 @@
         {{ end }}
 
 
-
         <!-- post Content -->
         {{ with .Content }}
         <div class="post-content content-text">
@@ -79,9 +103,13 @@
         {{ end }}
       </div>
       
-      <div class="col-md-4">
-        {{ partial "sidebar.html" . }}
-      </div>
+
+      {{ if not .Params.toc }}
+        <div class="col-md-4">
+          {{ partial "sidebar.html" . }}
+        </div>
+      {{ end }}
+
     </div>
   </div>
 

@@ -29,6 +29,7 @@
 					</figure>
 					<div class="card-body">
 						<h1 class="card-title blog-content">{{ .Title }}</h1>
+						{{ with .Params.subtitle}}<span> {{ . }} </span>{{ end }}
 					</div>
 				</div>
 			</div>
