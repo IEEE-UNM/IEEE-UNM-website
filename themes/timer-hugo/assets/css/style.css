@@ -1711,3 +1711,25 @@ ul.social-icons li {
   font-size: 18px;
   text-align: justify;
 }
+
+.toc {
+  background-color: #fff;
+  border-right: 2px solid #0043ae;
+  top: 100px;
+  padding: 10px 0;
+  grid-template-columns: 100% 15em;
+  position: sticky;
+  align-self: flex-start;
+}
+
+.toc a:active {
+  background-color: #0043ae;
+}
+
+.toc ul ul {
+  text-indent: 1em;
+}
+
+html, body {
+  scroll-padding-top: 100px;
+}

@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+{{ "<!-- Page Header -->" | safeHTML }}
+<section class="global-page-header">
+  <div class="container mt-0">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>{{ .Title }}</h2>
+          <div class="portfolio-meta">
+				<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ "<!-- work details part start -->" | safeHTML }}
+<section class="single-post" style="scroll-padding-top: 100px;">
+  <div class="container"  style="margin-bottom: 50px;">
+    <div class="row">
+
+        {{ if .Params.toc }}
+        {{ "<!-- Table of Content Section Start -->" | safeHTML }}
+        <div class="col-md-3">
+        
+            <div class="toc wow fadeInLeft" data-wow-delay=".7s">
+                <h5>Table of Contents</h5>
+                <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>
+
+                  {{ .TableOfContents}}
+
+            </div>
+        </div>
+        {{ end }}
+
+      <div class="col-md-9" style="padding-left: 60px;">
+
+        <!-- section heading -->
+        <div class="blog-heading mb-5 wow fadeInDown" data-wow-delay=".3s">
+          {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+          <div class="blog-content blog-meta">
+			      <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+          </div>
+        </div>
+
+
+        <!-- post Content -->
+        {{ with .Content }}
+        <div class="post-content content-text">
+          {{ . }}
+        </div>
+        {{ end }}
+      </div>
+      
+    </div>
+  </div>
+
+</section>
+{{"<!-- work details part end -->" | safeHTML }}
+
+{{ partial "cta.html" . }}
+
+{{ end }}
