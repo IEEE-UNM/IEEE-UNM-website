@@ -999,7 +999,6 @@ article {
 
 .single-post .post-content {
   padding-bottom: 40px;
-  padding-top: 20px;
   text-align: justify;
 }
 
@@ -1710,4 +1709,26 @@ ul.social-icons li {
   font-weight: 400;
   font-size: 18px;
   text-align: justify;
+}
+
+.toc {
+  background-color: #eae9ec;
+  top: 100px;
+  padding: 30px 25px;
+  grid-template-columns: 100% 15em;
+  position: sticky;
+  align-self: flex-start;
+
+}
+
+.toc a:active {
+  background-color: #0043ae;
+}
+
+.toc ul ul {
+  text-indent: 1em;
+}
+
+html, body {
+  scroll-padding-top: 100px;
 }

@@ -16,7 +16,7 @@
 						<div class="img-wrapper">
 							<div>
 								{{ with .Params.image }}
-								<img class="card-img-top" style="object-fit: contain; max-height: 500px;" src="{{ . | absURL }}" alt="Card image top" />
+								<img class="card-img-top" style="object-fit: contain; max-height: 400px;" src="{{ . | absURL }}" alt="Card image top" />
 								{{ end }}
 							</div>
 							<div class="overlay">
@@ -29,6 +29,7 @@
 					</figure>
 					<div class="card-body">
 						<h1 class="card-title blog-content">{{ .Title }}</h1>
+						{{ with .Params.subtitle}}<span> {{ . }} </span>{{ end }}
 					</div>
 				</div>
 			</div>

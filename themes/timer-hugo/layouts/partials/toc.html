@@ -1,0 +1,26 @@
+{{ if .Params.toc }}
+
+{{ $toc := .TableOfContents }}
+
+<!-- Add class to .TableOfContents -->
+{{ $toc := $toc | replaceRE "<nav" 
+  "<nav id='TableOfContents' class='navbar navbar-light bg-light'" | safeHTML }}
+
+<!-- Remove li -->
+{{ $toc := $toc | replaceRE "<li>|</li>" "" | safeHTML }}
+
+<!-- Replace ul or ol with nav -->
+{{ $toc := $toc | replaceRE "ul|ol" "nav" | safeHTML }}
+
+<!-- Add class to nav -->
+{{ $toc := $toc | replaceRE "<nav>" 
+  "<nav class='nav nav-pills flex-column'>" | safeHTML }}
+
+<!-- Add class to a -->
+{{ $toc := $toc | replaceRE "<a" 
+  "<a class='nav-link ml-3 my-1'" | safeHTML }}
+
+
+{{ $toc}}
+
+{{ end }}
