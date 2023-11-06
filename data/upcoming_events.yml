@@ -1,23 +1,13 @@
 enable : true
 title : Upcoming Events
 items :
-- poster : images/posters/2023-2024/Welcoming night Poster.png
-  title : IEEE's Hangout - Welcoming Night
-  start_date : 2023-10-12T20:00:00+08:00
-  end_date : 2023-10-12T21:30:00+08:00
-  num_days : 1
-  venue : F1A02
-  content : 
-  btn : true
-  btnText : "Register Here"
-  btnURL : https://forms.gle/eoMwheftZ3jaAgAn6
 
-- poster : images/posters/2023-2024/EMC Basics Talk Poster.png
-  title : Electromagnetic Compatibility Basics Talk
-  start_date : 2023-10-18T10:30:00+08:00
-  end_date : 2023-10-18T12:00:00+08:00
+- poster : images/posters/2023-2024/NXP Industrial Visit Poster.png
+  title : Industrial Visit to NXP Semiconductors 
+  start_date : 2023-11-14T08:30:00+08:00
+  end_date : 2023-11-14T14:00:00+08:00
   num_days : 1
-  venue : F3C06
+  venue : 
   content : 
   btn : false
   btnText : "Register Here"

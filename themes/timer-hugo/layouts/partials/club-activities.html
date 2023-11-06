@@ -22,9 +22,11 @@
 						{{with .icon}}<i class="{{ . }}"></i>{{ end }}
 					</div>
 					{{"<!-- club activities text-->" | safeHTML}}
-					<div class="content text-center">
-						<h3>{{ .title }}</h3>
-						<p>{{ .content | markdownify }}</p>
+					<div class="media">
+						<div class="media-body">
+							{{ with .title }}<h2 style="padding-bottom: 10px;">{{ . }}</h2>{{ end }}
+							{{ with .content }}<p>{{ . }}</p>{{ end }}
+						</div>
 						{{ if .btn }}
 						<a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
 						  data-wow-delay=".5s" href="{{ .btnURL }}"

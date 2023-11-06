@@ -28,7 +28,7 @@
       
       {{ "<!-- Table of Content Section Start -->" | safeHTML }}
       {{ if .Params.toc }}
-      <div class="col-md-3">
+      <div class="col-md-3" style="max-width: 60rem;">
           <div class="toc wow fadeInLeft" data-wow-delay=".7s">
               <a href="#title" style="color: black;"> <h4>Table of Contents</h4> </a>
               <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>
@@ -36,7 +36,7 @@
           </div>
       </div>
       
-      <div class="col-md-1" style="padding:15px; max-width: 0px;"></div>
+      <div class="col-md-1" style="padding:15px; max-width: 1px;"></div>
       {{ end }}
 
 
@@ -59,7 +59,7 @@
         <!-- post images -->
         {{ if ne .Params.content_images nil }}
         {{ $image_text := .Params.content_text }}
-        <div class="post-img">
+        <div class="post-img wow fadeInLeft" data-wow-delay=".5s">
           <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <!-- Image Carousel Indicators -->
             <ol class="carousel-indicators">
@@ -97,7 +97,7 @@
 
         <!-- post Content -->
         {{ with .Content }}
-        <div class="post-content content-text">
+        <div class="post-content content-text wow fadeInLeft" data-wow-delay=".5s">
           {{ . }}
         </div>
         {{ end }}

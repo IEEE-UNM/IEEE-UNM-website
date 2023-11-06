@@ -1,7 +1,7 @@
 ---
 title: "IEEE CS Carnival 2023"
 date: 2023-10-03T18:00:00+08:00
-draft: false
+draft: true
 tags: [Events]
 type: portfolio
 image: "images/posters/2023-2024/23_24 CScarnival.png"

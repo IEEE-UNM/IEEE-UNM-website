@@ -2,51 +2,51 @@ enable : true
 title : Club Activities
 subtitle: 
 club_activities_item :
-- icon : ion-calendar
-  title : Events
-  content : 
-  btn : false
-  btnText : "Read More"
-  btnURL : "events/"
+# - icon : ion-calendar
+#   title : Events
+#   content : 
+#   btn : false
+#   btnText : "Read More"
+#   btnURL : "events/"
 
 - icon : ion-mic-b
   title : Talks
-  content : 
+  content : Insightful talk sessions given by professionals of the topic.
   btn : false
   btnText : "Read More"
   btnURL : "events/"
 
 - icon : ion-map
   title : Industrial Visits
-  content :
+  content : Visits to industry-leading companies.
   btn : false
   btnText : "Read More"
   btnURL : "events/"
 
 - icon : ion-chatboxes
   title : Forums
-  content : 
+  content : Panel discussion sessions with esteemed representatives from different engineering sectors.
   btn : false
   btnText : "Read More"
   btnURL : "events/" 
 
 - icon : ion-gear-a
   title : Workshops
-  content : 
+  content : Classes for members to learn useful technical skills.
   btn : false
   btnText : "Read More"
   btnURL : "events/"
 
 - icon : ion-coffee
   title : Hangouts
-  content : 
+  content : Events for members to unwind and network.
   btn : false
   btnText : "Read More"
   btnURL : "events/" 
 
 - icon : ion-flash
   title : Spark Initiative
-  content : Club-funded projects for our members
+  content : Club-funded student projects for members.
   btn : false
   btnText : "Read More"
   btnURL : "spark-initiative/"

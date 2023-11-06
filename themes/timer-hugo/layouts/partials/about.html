@@ -20,12 +20,12 @@
 							{{ with .Site.Params.about.content }}<p class="wow fadeInDown" style="text-align: left;" data-wow-delay=".5s">{{ . | safeHTML }}</p>{{ end }}
 							<div class="section-border wow fadeInLeft" data-wow-delay=".7s"></div>
 						</div>
-					{{ if .Site.Data.feature.enable }}
+						
 					{{ "<!-- Feature Section Start -->" | safeHTML }}
 					<section id="feature">
 						<div class="block">
 							<div class="row">
-								{{ range $index, $elemrnt := .Site.Data.feature.item }}
+								{{ range $index, $element := .Site.Params.about.item }}
 									{{ $delay := mul (add $index 1) 300 }}
 									<div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="{{ $delay }}ms">
 										<div class="media-left">
@@ -36,14 +36,13 @@
 										<div class="media-body">
 											{{ with .title }}<h2>{{ . }}</h2>{{ end }}
 											{{ with .description }}<p>{{ . }}</p>{{ end }}
+										</div>
 									</div>
-								</div>
-								{{ end }}
+								{{ end }}	
 							</div>
 						</div>
 					</section>
 					{{ "<!-- Feature Section End -->" | safeHTML }}
-					{{ end }}	
 					</div>
 				</div>
 				</div>

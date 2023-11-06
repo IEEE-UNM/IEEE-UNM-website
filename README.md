@@ -50,4 +50,15 @@ git submodule update --init --recursive
 # Contributing
 Please read CONTRIBUTING.md for instruction on contributing.
 
-# 
+
+
+# Adding Content
+Title of page:
+''' sh
+title - IEEE's Hangout - Welcoming Night
+'''
+date : 2023-10-12T20:00:00+08:00
+draft: false
+tags: [Hangout]
+type: portfolio
+image : images/posters/2023-2024/Welcoming night Poster.png
