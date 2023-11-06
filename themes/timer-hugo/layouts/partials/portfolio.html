@@ -37,11 +37,7 @@
 								<img src="{{ $e.Params.Image | relURL }}" class="img-fluid" alt="this is a title" style="max-height: 360px;">
 								<div class="overlay">
 									<div class="buttons">
-										{{ if isset $e.Params "zoom_in_image" }}
-										<a rel="gallery" class="fancybox" href="{{ $e.Params.zoom_in_image | relURL }}">Poster</a>
-										{{ else }}
 										<a rel="gallery" class="fancybox" href="{{ $e.Params.Image | relURL }}">Poster</a>
-										{{ end }}
 										<a href="{{ $e.Permalink }}">Details</a>
 									</div>
 								</div>

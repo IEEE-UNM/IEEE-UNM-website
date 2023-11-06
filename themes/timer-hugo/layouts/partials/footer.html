@@ -2,16 +2,20 @@
 <footer id="footer">
   <div class="container" style="padding: 0; margin-top: 0px;">
     <div class="row content-justify-between">
-      <div class="col-md-8 col-12 text-center text-lg-left text-md-left" style="display:flex;">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left" style="display:flex; margin-left: 0px;">
         <p class="copyright">Copyright:
           <span>
-            <script>
-              document.write(new Date().getFullYear())
-            </script>
-          </span> Design and Developed by
-          <a href="/" target="_self">UNM IEEE Student Branch</a>.
-          <br> Email: 
-          <a href="mailto: ieee.unm@outlook.com" target="_blank">UNM IEEE Student Branch Email</a>
+              <a href="/" target="_self"> @             
+              <script>
+                document.write(new Date().getFullYear())
+              </script>
+              IEEE UNM Student Branch</a>
+          </span>
+
+          <br>
+          {{ with .Site.Data.contact }}
+          Email: <a href="mailto: {{ .mail }}" target="_blank">{{ .mail }}</a>
+          {{ end }}
         </p>
       </div>
       <div class="col-md-4 col-12">
@@ -42,6 +46,7 @@
 {{ "<!-- template main js -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
+
 {{ "<!-- google analitycs -->" | safeHTML }}
 <script>
   (function (i, s, o, g, r, a, m) {

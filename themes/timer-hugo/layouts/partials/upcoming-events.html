@@ -40,6 +40,7 @@
                                             {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .start_date}} to 
                                             {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .end_date }}
                                         </h3>
+                                        
                                     {{ else }}
                                         <h3><b>Date: </b>
                                             {{ dateFormat (.Site.Params.dateFormat | default  "2 January (Monday)") .start_date }} to 
@@ -50,7 +51,7 @@
                                             {{ dateFormat (.Site.Params.timeFormat | default "3:04 PM") .end_date }}
                                         </h3>
                                     {{ end }}
-                                    <h3><b>Venue: </b> {{ .venue }} </h3>
+                                    {{ with .venue }}<h3><b>Venue: </b> {{ . }} </h3> {{ end }}
                                     <div class="section-border" style="margin: 20px 0 10px;"></div>
                                     <p>{{ .content | markdownify }}</p>
                                     {{ if .btn }}

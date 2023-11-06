@@ -1,15 +1,14 @@
 enable  : true
-contactFormTitle    : CONTACT US
-contactFormSubtitle : >
-  Contact us using the form below
-mapTitle    : UNM LOCATION
+contactFormTitle    : Contact Us
+contactFormSubtitle : > 
+  Reach out to us!
+mapTitle    : UNM Location
 mapSubtitle : >
   Visit us at University of Nottingham Malaysia!
-officeAddress1 : University of Nottingham Malaysia, Jalan Broga, 43500 Semenyih, Selangor Darul Ehsan, Malaysia
-mail1 : support@timer.com
-mail2 : info@timer.com
-phone1: +07 052 245 022
-phone2: +07 052 245 025 
+officeAddress : University of Nottingham Malaysia, Jalan Broga, 43500 Semenyih, Selangor Darul Ehsan, Malaysia
+mail : ieee.unm@outlook.com
+phone1: not used
+phone2: not used
 
 socials:
   - name: Instagram

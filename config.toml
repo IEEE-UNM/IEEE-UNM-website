@@ -43,11 +43,6 @@ dateFormat = "2 January 2006, Monday"
 # Meta data
 description = "IEEE UNM SB Website"
 author = "IEEE UNM SB"
-# Google Analitycs
-# googleAnalitycsID = "Your ID"
-# contact form action
-# contactFormAction = "#" # contact form works with https://formspree.io
-
 
 # Banner Section
 [params.banner]
@@ -70,7 +65,9 @@ title = "Mechatronic"
 [[params.banner.flipText]]
 title = "Computer Science"
 
-# Homepage About/Hero Section
+
+
+# Homepage Vision & Mission Section
 [params.about]
 enable = true
 title = "Vision & Mission"
@@ -78,19 +75,31 @@ title = "Vision & Mission"
 background_image = "images/IEEE Logo Only.svg"
 image = "images/Final Logo.png"
 
-# Call to Action before footer 
-[params.cta]
-enable = true
-title = "CONTACT US"
-#content = "Please"
-btnText = "Contact us"
-btnURL = "contact/"
+[[params.about.item]]
+icon  = "ion-ios-eye"
+title = "Vision"
+description = "To create a rapport community that fosters great teamwork and inspires lifelong-learning in the field of Electrical and Electronic Engineering. "
+
+[[params.about.item]]
+icon  = "ion-android-locate"
+title = "Mission"
+description = "IEEE UNM SB organises participant-centered events and activities that will benefit the participants in their professional and personal development."
+
 
 # Past Events Section On Homepage
 [params.portfolio]
 enable = true
 title = "Past Events"
-parent_dir = ["2022-2023","2023-2024"]
+
+
+# Call to Action before footer 
+[params.cta]
+enable = true
+title = "Contact Us"
+#content = "Please"
+btnText = "Contact us"
+btnURL = "contact/"
+
 
 # footer social icon
 [[params.socialIcon]]
