@@ -990,10 +990,6 @@ article {
   color: #fff;
 }
 
-/* .single-post {
-  padding: 80px 0 20px;
-} */
-
 
 .single-post .post-content {
   padding-bottom: 40px;
@@ -1010,8 +1006,18 @@ article {
 
 .single-post .post-content ol li,
 .single-post .post-content ul li {
-  color: #666;
+  font-family: "Roboto", sans-serif;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 300;
 }
+
+.single-post .post-content ol, 
+.single-post .post-content ul, 
+.single-post .post-content p{
+  margin-bottom: 1.5rem;
+}
+
 
 .single-post .media {
   border: 1px solid #dedede;

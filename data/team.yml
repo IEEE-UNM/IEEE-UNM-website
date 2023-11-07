@@ -16,7 +16,7 @@ department:
       linkedIn    : https://www.linkedin.com/in/lye-wen-hao-20437b247
 
     - name  : Syaza Emira
-      image : 
+      image : images/about/Emira.png
       designation : Secretary
       description : 
       linkedIn    : https://www.linkedin.com/in/syaza-emira-880936a9
@@ -38,19 +38,19 @@ department:
   - dept_name: Events
     members  :
     - name  : Wong Zhi Yuan
-      image : 
+      image : images/about/Zhi Yuan.png
       designation : Head of Events
       description : 
       linkedIn    : https://www.linkedin.com/in/zhi-yuan-wong-8a5178224
 
     - name  : Lee Shi Min
-      image : 
+      image : images/about/Shi Min.png
       designation : Events Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
 
     - name  : Lee Loo Bee
-      image : 
+      image : images/about/Loo Bee.png
       designation : Events Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/loobeelee
@@ -60,13 +60,13 @@ department:
   - dept_name: Marketing
     members  :
     - name  : Jazlynn Leong Xin Er
-      image : 
+      image : images/about/Jazlynn.png
       designation : Head of Marketing
       description : 
       linkedIn    : https://www.linkedin.com/in/jazlynn-xin-er-leong-539b33266
 
     - name  : Nur Sabrina
-      image :
+      image : images/about/Sabrina.png
       designation : Marketing Executive
       description : 
       linkedIn    : 
