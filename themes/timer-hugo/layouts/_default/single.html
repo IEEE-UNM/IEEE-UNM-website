@@ -8,9 +8,10 @@
         <div class="block">
           <h2>{{ .Title }}</h2>
           <div class="portfolio-meta">
-            {{ with .Params.subtitle}}<span> {{ . }} </span>{{ end }}
-            {{ if isset .Params "date" }}
-						<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+            {{ if isset .Params "subtitle" }}
+              {{ with .Params.subtitle}}<span>{{ . }}</span>{{ end }}
+            {{ else }}
+						  <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
             {{ end }}
           </div>
         </div>
@@ -48,9 +49,10 @@
           {{ with .Title }}<h1 id="title">{{ . }}</h1>{{ end }}
 
           <div class="blog-content blog-meta">
-            {{ with .Params.subtitle}}<span>{{ . }}</span>{{ end }}
-            {{ if isset .Params "date" }}
-						<span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
+            {{ if isset .Params "subtitle" }}
+              {{ with .Params.subtitle}}<span>{{ . }}</span>{{ end }}
+            {{ else }}
+						  <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}</span>
             {{ end }}
           </div>
 
@@ -97,7 +99,7 @@
 
         <!-- post Content -->
         {{ with .Content }}
-        <div class="post-content content-text wow fadeInLeft" data-wow-delay=".5s">
+        <div class="post-content content-text wow fadeInLeft" data-wow-delay=".5s" style="text-align: justify;">
           {{ . }}
         </div>
         {{ end }}
