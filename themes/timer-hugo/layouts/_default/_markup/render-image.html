@@ -1,4 +1,4 @@
-{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) -}}
+{{- $image := .Page.Resources.GetMatch (printf "%s" (.Destination | absURL)) -}}
 
 <img
     src="{{ .Destination | absURL }}" alt="{{ .Text }}"
