@@ -2,10 +2,10 @@ enable : true
 title : Upcoming Events
 items :
 
-- poster : images/posters/2023-2024/NXP Industrial Visit Poster.png
-  title : Industrial Visit to NXP Semiconductors 
-  start_date : 2023-11-14T08:30:00+08:00
-  end_date : 2023-11-14T14:00:00+08:00
+- poster : images/posters/2023-2024/Mechanical Keyboard.png
+  title : Mechanical Keyboard Talk
+  start_date : 2023-11-23T19:00:00+08:00
+  end_date : 2023-11-23T20:30:00+08:00
   num_days : 1
   venue : 
   content : 
