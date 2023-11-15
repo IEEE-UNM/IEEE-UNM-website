@@ -7,8 +7,8 @@ items :
   start_date : 2023-11-23T19:00:00+08:00
   end_date : 2023-11-23T20:30:00+08:00
   num_days : 1
-  venue : 
+  venue : F1A03
   content : 
-  btn : false
+  btn : true
   btnText : "Register Here"
-  btnURL : "events/"
+  btnURL : "https://docs.google.com/forms/d/e/1FAIpQLSfdhqVw_z-m1ckWzSPXOrDim5iFqytUow2C2o3FmRR5zfvPEA/viewform"

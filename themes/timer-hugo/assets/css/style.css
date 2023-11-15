@@ -192,7 +192,7 @@ a:hover {
   color: #fff;
 }
 
-.about-page-content:before {
+.about-page-content::before {
   content: '';
   background: rgba(0, 67, 174, 0.3);
   position: absolute;
@@ -349,7 +349,7 @@ a:hover {
   position: relative;
 }
 
-#hero-area:before {
+#hero-area::before {
   content: '';
   z-index: 9;
   background: rgba(255, 255, 255, 0.583);
@@ -752,7 +752,7 @@ article {
   margin-bottom: 10px;
 }
 
-.blog-content .blog-meta span:after {
+.blog-content .blog-meta span::after {
   padding: 0 3px 0 6px;
 }
 
@@ -1646,8 +1646,8 @@ ul.social-icons li {
   margin: 10px auto 30px;
 }
 
-/* .club_activities .block .icon-box:after,
-.club_activities .block .icon-box:before {
+/* .club_activities .block .icon-box::after,
+.club_activities .block .icon-box::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -1659,14 +1659,14 @@ ul.social-icons li {
   transform: scaleY(0.5774) rotate(-45deg);
 }
 
-.club_activities .block .icon-box:before {
+.club_activities .block .icon-box::before {
   top: -56.5685px;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   background: #0043ae;
 }
 
-.club_activities .block .icon-box:after {
+.club_activities .block .icon-box::after {
   bottom: -56.5685px;
   border-bottom: 2px solid #fff;
   border-left: 2px solid #fff;
@@ -1682,7 +1682,7 @@ ul.social-icons li {
   margin-top: 50px;
 }
 
-.hvr-bounce-to-right:before {
+.hvr-bounce-to-right::before {
   background-color: #0043ae;
 }
 
