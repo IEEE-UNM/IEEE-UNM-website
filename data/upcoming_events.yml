@@ -12,3 +12,15 @@ items :
   btn : true
   btnText : "Register Here"
   btnURL : "https://docs.google.com/forms/d/e/1FAIpQLSfdhqVw_z-m1ckWzSPXOrDim5iFqytUow2C2o3FmRR5zfvPEA/viewform"
+
+
+- poster : images/posters/2023-2024/EVC Talk.png
+  title : EV-Charging Infrastructure Industrial Talk
+  start_date : 2023-11-29T16:00:00+08:00
+  end_date : 2023-11-29T17:00:00+08:00
+  num_days : 1
+  venue : MS Teams
+  content : 
+  btn : true
+  btnText : "Register Here"
+  btnURL : https://docs.google.com/forms/d/e/1FAIpQLSfmR20IW5GXrgGY7Tl06QoxjLyGaq8Wq9CW9aUAajQZJIV6aw/viewform
