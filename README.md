@@ -51,14 +51,43 @@ git submodule update --init --recursive
 Please read CONTRIBUTING.md for instruction on contributing.
 
 
+# Layout
+The layout of this website was derived from [here](https://github.com/themefisher/timer-hugo).
 
 # Adding Content
-Title of page:
-''' sh
-title - IEEE's Hangout - Welcoming Night
-'''
-date : 2023-10-12T20:00:00+08:00
-draft: false
-tags: [Hangout]
+Each markdown file (except for _index.md) corresponds to a post in the website.
+
+## Events
+Each markdown file has front matter:
+``` md
+---
+title : Title of Post
+date : YYYY-MM-DDT00:00:00+08:00
+draft: true/false
+tags: [Tag]
 type: portfolio
-image : images/posters/2023-2024/Welcoming night Poster.png
+image : poster.png
+content_images: [images.png]
+content_text: [image caption]
+---
+```
+Below the front matter is the content of the post
+
+
+## Spark
+Each markdown file (except for _index.md) corresponds to a post in the website.
+
+Each markdown file has front matter:
+``` md
+---
+title : Title of Post
+date : YYYY-MM-DDT00:00:00+08:00
+draft: true/false
+tags: [Tag]
+type: section
+tags: []
+image: section_img.png
+toc: true
+---
+```
+Below the front matter is the content of the post
