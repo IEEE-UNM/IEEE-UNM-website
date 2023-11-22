@@ -1343,7 +1343,8 @@ article {
 }
 
 .team-member h3 {
-  color: #0043ae;
+  /* color: #0043ae; */
+  color: #000;
   margin-bottom: 0;
   font-size: 20px;
 }
