@@ -79,7 +79,7 @@ department:
       image : images/about/Hong Kai.png
       designation : Head of Technical
       description : 
-      linkedIn    : https://www.linkedin.com/in/hong-kai-tan-6703162a8
+      linkedIn    : #https://www.linkedin.com/in/hong-kai-tan-6703162a8
 
     - name  : Goh Zhen Hong
       image : images/about/Zhen Hong.png
