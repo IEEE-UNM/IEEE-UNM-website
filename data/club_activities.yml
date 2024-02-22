@@ -32,25 +32,32 @@ club_activities_item :
 
 - icon : ion-gear-a
   title : Workshops
-  content : Classes for members to learn useful technical skills.
+  content : Classes for participants to learn useful technical skills.
   btn : false
   btnText : "Read More"
   btnURL : "events/"
 
 - icon : ion-coffee
   title : Hangouts
-  content : Events for members to unwind and network.
+  content : Events for participants to unwind and network.
   btn : false
   btnText : "Read More"
   btnURL : "events/" 
 
 - icon : ion-flash
   title : Spark Initiative
-  content : Club-funded student projects for members.
+  content : Club-funded student projects for participants.
   btn : false
   btnText : "Read More"
   btnURL : "spark-initiative/"
-  
+
+- icon : ion-trophy
+  title : Competitions
+  content : Contests for participants to test their technical skills. 
+  btn : false
+  btnText : "Read More"
+  btnURL : "events/"
+    
 # - icon : ion-ios-world-outline #ion-android-globe
 #   title : Network
 #   content : We provide opportunities for networking with industry leaders and companies.
