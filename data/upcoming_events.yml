@@ -1,6 +1,6 @@
 # Section in home page showing a carousel of upcoming events
 
-enable : true            # true = show section; false = dont show section
+enable : false            # true = show section; false = dont show section
 title : Upcoming Events   # title of section
 items :                   # subtitle of section
 
@@ -29,16 +29,3 @@ items :                   # subtitle of section
 # #   btnText : Register Here
 # #   btnURL : https://docs.google.com/forms/d/e/1FAIpQLSfdhqVw_z-m1ckWzSPXOrDim5iFqytUow2C2o3FmRR5zfvPEA/viewform
 # --------------------------------------
-
-
-- poster : images/posters/2023-2024/Maze Solving Robot Competition.png
-  title : Maze Solving Robot Competition
-  start_date : 2024-03-11T19:00:00+08:00
-  end_date : 2024-03-23T12:00:00+08:00
-  num_days : 4
-  venue : F4B09 (Day 1 & 3), F3B09 (Day 2 & 4)
-  content : 
-  btn : true
-  btnText : "Register Here"
-  btnURL : "https://docs.google.com/forms/d/e/1FAIpQLScYwvxCwgQ-h0UoqKQ-kqJ5sffpM3bLVgavFPV87rneRH-2uQ/viewform"
-
