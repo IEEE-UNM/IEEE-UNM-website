@@ -33,7 +33,9 @@
         <h4>Tags</h4>
         <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>  
         {{ range .Params.tags }}  
+          <div class="media-body badge badge-pill category-tag">
           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          </div>
         {{ end }}
     </div>
     
