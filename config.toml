@@ -109,3 +109,6 @@ url = "https://www.instagram.com/ieee_unm/"
 [[params.socialIcon]]
 icon = "ion-social-linkedin"
 url = "https://www.linkedin.com/company/ieee-unm-student-branch/?originalSubdomain=my"
+
+[permalinks]
+tags = "/tag/:slug/"

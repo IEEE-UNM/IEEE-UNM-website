@@ -31,15 +31,10 @@
     
     <div class="mt-5">
         <h4>Tags</h4>
-        <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>
-            
-            {{ if ne .Params.tags nil }}
-            {{ range .Params.tags }}
-                <div class="media-body mb-3 badge badge-pill category-tag">
-                <h6 class="media-heading"> {{ . }} </h6>
-                </div>
-            {{ end }}
-            {{ end }}
+        <div class="section-border" style="width: 70%; margin-bottom: 15px;"></div>  
+        {{ range .Params.tags }}  
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
     </div>
     
 
