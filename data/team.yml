@@ -75,8 +75,8 @@ department:
 
   - dept_name: Technical
     members  :
-    - name  : Tan Hong Kai
-      image : images/about/Hong Kai.png
+    - name  : Heng Sheng Yao
+      image : images/about/Sheng Yao.png
       designation : Head of Technical
       description : 
       linkedIn    : https://www.linkedin.com/in/hong-kai-tan-6703162a8
