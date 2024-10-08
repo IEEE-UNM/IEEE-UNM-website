@@ -79,16 +79,16 @@ department:
       image : images/about/Sheng Yao.png
       designation : Head of Technical
       description : 
-      linkedIn    : https://www.linkedin.com/in/hong-kai-tan-6703162a8
+      linkedIn    : https://www.linkedin.com/in/heng-sheng-yao/
 
-    - name  : Goh Zhen Hong
-      image : images/about/Zhen Hong.png
+    - name  : Ammar Haikal
+      image : images/about/Ammar.png
       designation : Technical Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/goh-zhen-hong-8a664422a
+      linkedIn    : https://www.linkedin.com/in/mohamad-ammar-haikal-209a07246/
 
-    - name  : Ng Chin Yuen
+    - name  : Brandon Yeo
       image : images/about/Chin Yuen.png
       designation : Technical Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/chin-yuen-ng-137384240
+      linkedIn    : https://www.linkedin.com/in/brandon-yeo-2809a8245/
