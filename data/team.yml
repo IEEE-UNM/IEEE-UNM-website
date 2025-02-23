@@ -3,53 +3,53 @@ title   : Meet The Team
 department: 
   - dept_name: Executive
     members  :
-    - name  : Harthi Ganesh
-      image : images/about/Harthi.png
+    - name  : Lee Shi Min
+      image : images/about/ShiMin.png
       designation : President
       description : 
-      linkedIn    : https://www.linkedin.com/in/harthiganesh
+      linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
     
-    - name  : Lye Wen Hao
-      image : images/about/Wen Hao.png
+    - name  : Donovan Teo
+      image : images/about/Donovan.png
       designation : Vice President
       description : 
-      linkedIn    : https://www.linkedin.com/in/lye-wen-hao-20437b247
+      linkedIn    : https://www.linkedin.com/in/donovan-teo-a73a2b237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 
-    - name  : Syaza Emira
-      image : images/about/Emira.png
+    - name  : Jazlynn Leong Xin Er
+      image : images/about/Jazlynn Leong.png
       designation : Secretary
       description : 
-      linkedIn    : https://www.linkedin.com/in/syaza-emira-880936a9
+      linkedIn    : https://www.linkedin.com/in/jazlynnleongxe/
 
-    - name  : Caitlin Pon May Yean
-      image : images/about/Caitlin.png
+    - name  : Trena Lee
+      image : images/about/Trena Lee.png
       designation : Assistant Secretary
       description : 
       linkedIn    : 
     
-    - name  : Careen Chin San Qian
-      image : images/about/Careen.png
+    - name  : Hao Zhe
+      image : images/about/Hao Zhe.png
       designation : Treasurer
       description : 
-      linkedIn    : https://www.linkedin.com/in/careen-chin-san-qian-12429ba9
+      linkedIn    : https://www.linkedin.com/in/hao-zhe-low-5297192b2
 
 #######
 
   - dept_name: Events
     members  :
-    - name  : Wong Zhi Yuan
+    - name  : Marcus
       image : images/about/Zhi Yuan.png
-      designation : Head of Events
+      designation : Events Manager
       description : 
       linkedIn    : https://www.linkedin.com/in/zhi-yuan-wong-8a5178224
 
-    - name  : Lee Shi Min
+    - name  : Zi Yang
       image : images/about/Shi Min.png
       designation : Events Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
 
-    - name  : Lee Loo Bee
+    - name  : Max Koo
       image : images/about/Loo Bee.png
       designation : Events Executive
       description : 
@@ -82,7 +82,7 @@ department:
       linkedIn    : https://www.linkedin.com/in/heng-sheng-yao/
 
     - name  : Ammar Haikal
-      image : images/about/Ammar.png
+      image : images/about/Ammar Haikal.png
       designation : Technical Executive
       description : 
       linkedIn    : https://www.linkedin.com/in/mohamad-ammar-haikal-209a07246/
