@@ -1,4 +1,4 @@
-baseURL = 'https://ieee-unm.github.io/IEEE-UNM-website/about/' #https://IEEEUNMSB.com/
+baseURL = 'https://ieee-unm.github.io/IEEE-UNM-website/' #https://IEEEUNMSB.com/
 languageCode = 'en-us'
 title = 'IEEE UNM SB'
 theme = ["timer-hugo"]
