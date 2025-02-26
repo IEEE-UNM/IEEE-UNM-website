@@ -38,10 +38,10 @@ department:
   - dept_name: Events
     members  :
     - name  : Marcus
-      image : images/about/Zhi Yuan.png
-      designation : Events Head
+      image : images/about/Marcus Yew.png
+      designation : Events Manager
       description : 
-      linkedIn    : https://www.linkedin.com/in/zhi-yuan-wong-8a5178224
+      linkedIn    : https://www.linkedin.com/in/marcus-yew-4671a129a/?originalSubdomain=my
 
     - name  : Zi Yang
       image : images/about/Shi Min.png
@@ -50,26 +50,26 @@ department:
       linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
 
     - name  : Max Koo
-      image : images/about/Loo Bee.png
+      image : images/about/Max Koo.png
       designation : Events Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/loobeelee
+      linkedIn    : https://www.linkedin.com/in/maxkoo/
 
 #######
 
   - dept_name: Marketing
     members  :
-    - name  : Jazlynn Leong Xin Er
-      image : images/about/Jazlynn.png
+    - name  : Lye Shi Qi
+      image : images/about/Lye Shi Qi.png
       designation : Head of Marketing
       description : 
-      linkedIn    : https://www.linkedin.com/in/jazlynn-xin-er-leong-539b33266
+      linkedIn    : https://www.linkedin.com/in/lye-shi-qi-92ba28328/
 
-    - name  : Nur Sabrina
-      image : images/about/Sabrina.png
+    - name  : Lim Chia Shing
+      image : images/about/Lim Chia Shing.png
       designation : Marketing Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/nur-sabrina-saiful-bahari-b8a17b283/
+      linkedIn    : https://www.linkedin.com/in/lim-chia-shing-1413aa2b8/
 
 #####
 
