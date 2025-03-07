@@ -25,7 +25,7 @@ department:
       image : images/about/Trena Lee.png
       designation : Assistant Secretary
       description : 
-      linkedIn    : 
+      linkedIn    : https://www.linkedin.com/in/trena-lee/?originalSubdomain=my
     
     - name  : Hao Zhe
       image : images/about/Hao Zhe.png
