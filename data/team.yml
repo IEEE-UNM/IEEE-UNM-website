@@ -3,92 +3,105 @@ title   : Meet The Team
 department: 
   - dept_name: Executive
     members  :
-    - name  : Lee Shi Min
-      image : images/about/ShiMin.png
+    - name  : Marcus Yew
+      image : images/about/Marcus Yew.png
       designation : President
       description : 
-      linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
-    
-    - name  : Donovan Teo
-      image : images/about/Donovan.png
-      designation : Vice President
-      description : 
-      linkedIn    : https://www.linkedin.com/in/donovan-teo-a73a2b237?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-
-    - name  : Jazlynn Leong Xin Er
-      image : images/about/Jazlynn Leong.png
-      designation : Secretary
-      description : 
-      linkedIn    : https://www.linkedin.com/in/jazlynnleongxe/
-
-    - name  : Trena Lee
-      image : images/about/Trena Lee.png
-      designation : Assistant Secretary
-      description : 
-      linkedIn    : https://www.linkedin.com/in/trena-lee/?originalSubdomain=my
+      linkedIn    : https://www.linkedin.com/in/marcus-yew-4671a129a/?originalSubdomain=my
     
     - name  : Hao Zhe
       image : images/about/Hao Zhe.png
-      designation : Treasurer
+      designation : Vice President
       description : 
       linkedIn    : https://www.linkedin.com/in/hao-zhe-low-5297192b2
+
+    - name  : Gloria 
+      image : images/about/placeholder.png
+      designation : Secretary
+      description : 
+      linkedIn    : 
+
+    - name  : Elynn
+      image : images/about/placeholder.png
+      designation : Assistant Secretary
+      description : 
+      linkedIn    : 
+    
+    - name  : Marcus Wong
+      image : images/about/placeholder.png
+      designation : Treasurer
+      description : 
+      linkedIn    : 
 
 #######
 
   - dept_name: Events
     members  :
-    - name  : Marcus
-      image : images/about/Marcus Yew.png
+    - name  : Lye Shi Qi
+      image : images/about/Lye Shi Qi.png
       designation : Events Manager
       description : 
-      linkedIn    : https://www.linkedin.com/in/marcus-yew-4671a129a/?originalSubdomain=my
+      linkedIn    : https://www.linkedin.com/in/lye-shi-qi-92ba28328/
 
-    - name  : Zi Yang
-      image : images/about/Shi Min.png
+    - name  : Goh Yi Siang
+      image : images/about/Goh Yi Siang.jpg
       designation : Events Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/shi-min-lee-a11aaa282
+      linkedIn    : https://www.linkedin.com/in/yi-siang-goh-8a4b69351
 
-    - name  : Max Koo
-      image : images/about/Max Koo.png
+    - name  : Ching Yi Xuan
+      image : images/about/placeholder.png
       designation : Events Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/maxkoo/
+      linkedIn    : 
+
+    - name  : Danish
+      image : images/about/placeholder.png
+      designation : Events Executive
+      description : 
+      linkedIn    : 
 
 #######
 
   - dept_name: Marketing
     members  :
-    - name  : Lye Shi Qi
-      image : images/about/Lye Shi Qi.png
+    - name  : Chin Jing Woon
+      image : images/about/Chin Jing Woon.jpg
       designation : Head of Marketing
       description : 
-      linkedIn    : https://www.linkedin.com/in/lye-shi-qi-92ba28328/
+      linkedIn    : https://www.linkedin.com/in/jing-woon-chin-bb471030b
 
-    - name  : Lim Chia Shing
-      image : images/about/Lim Chia Shing.png
+    - name  : Lee Zhong Herng 
+      image : images/about/placeholder.png
       designation : Marketing Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/lim-chia-shing-1413aa2b8/
+      linkedIn    : 
 
-#####
+#######
 
   - dept_name: Technical
     members  :
-    - name  : Heng Sheng Yao
-      image : images/about/Sheng Yao.png
+    - name  : Muhammad Ayaan Gill
+      image : images/about/placeholder.png
       designation : Head of Technical
       description : 
-      linkedIn    : https://www.linkedin.com/in/heng-sheng-yao/
+      linkedIn    : https://www.linkedin.com/in/muhammad-ayaan-gill/
 
-    - name  : Ammar Haikal
-      image : images/about/Ammar Haikal.png
+    - name  : Gan Ching Kang
+      image : images/about/Gan Ching Kang.png
       designation : Technical Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/mohamad-ammar-haikal-209a07246/
+      linkedIn    : https://www.linkedin.com/in/gan-ching-kang-1949472ab
 
-    - name  : Brandon Yeo
-      image : images/about/BrandonYeo.png
+    - name  : Bryan Teh Wen Liang
+      image : images/about/Bryan Teh Wen Liang.jpg
       designation : Technical Executive
       description : 
-      linkedIn    : https://www.linkedin.com/in/brandon-yeo-2809a8245/
+      linkedIn    : https://www.linkedin.com/in/bryan-teh-37322524b 
+
+    - name  : Tai Jia Xuan
+      image : images/about/Tai Jia Xuan.png
+      designation : Technical Executive
+      description : 
+      linkedIn    : http://www.linkedin.com/in/jia-xuan-tai-532bb5327
+      
