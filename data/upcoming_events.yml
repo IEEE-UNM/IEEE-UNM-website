@@ -1,6 +1,6 @@
 # Section in home page showing a carousel of upcoming events
 
-enable : false            # true = show section; false = dont show section
+enable : true            # true = show section; false = dont show section
 title : Upcoming Events   # title of section
 items :                   # subtitle of section
 

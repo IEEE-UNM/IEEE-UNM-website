@@ -21,11 +21,11 @@ department:
       description : 
       linkedIn    : 
 
-    - name  : Elynn
-      image : images/about/placeholder.png
+    - name  : Elynn Leong Yong Er
+      image : images/about/Elynn Leong Yong Er.jpg
       designation : Assistant Secretary
       description : 
-      linkedIn    : 
+      linkedIn    : https://www.linkedin.com/in/elynn-yong-er-leong-34b078370/ 
     
     - name  : Marcus Wong
       image : images/about/placeholder.png
@@ -50,10 +50,10 @@ department:
       linkedIn    : https://www.linkedin.com/in/yi-siang-goh-8a4b69351
 
     - name  : Ching Yi Xuan
-      image : images/about/placeholder.png
+      image : images/about/Ching Yi Xuan.png
       designation : Events Executive
       description : 
-      linkedIn    : 
+      linkedIn    : http://www.linkedin.com/in/yi-xuan-ching-1299092ba
 
     - name  : Danish
       image : images/about/placeholder.png
