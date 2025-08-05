@@ -28,10 +28,10 @@ department:
       linkedIn    : https://www.linkedin.com/in/elynn-yong-er-leong-34b078370/ 
     
     - name  : Marcus Wong
-      image : images/about/placeholder.png
+      image : images/about/Marcus Wong.jpg
       designation : Treasurer
       description : 
-      linkedIn    : 
+      linkedIn    : https://www.linkedin.com/in/yan-jie-wong-7a1322307/
 
 #######
 
@@ -55,8 +55,8 @@ department:
       description : 
       linkedIn    : http://www.linkedin.com/in/yi-xuan-ching-1299092ba
 
-    - name  : Danish
-      image : images/about/placeholder.png
+    - name  : Muhammad Danish Bin Fazlee
+      image : images/about/Muhammad Danish Bin Fazlee.jpg
       designation : Events Executive
       description : 
       linkedIn    : 
