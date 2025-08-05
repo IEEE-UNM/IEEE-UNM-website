@@ -15,17 +15,17 @@ department:
       description : 
       linkedIn    : https://www.linkedin.com/in/hao-zhe-low-5297192b2
 
-    - name  : Gloria 
-      image : images/about/placeholder.png
-      designation : Secretary
-      description : 
-      linkedIn    : 
-
     - name  : Elynn Leong Yong Er
       image : images/about/Elynn Leong Yong Er.jpg
-      designation : Assistant Secretary
+      designation : Secretary
       description : 
       linkedIn    : https://www.linkedin.com/in/elynn-yong-er-leong-34b078370/ 
+
+    - name  : Lye Shi Qi
+      image : images/about/Lye Shi Qi.png
+      designation : Events Manager
+      description : 
+      linkedIn    : https://www.linkedin.com/in/lye-shi-qi-92ba28328/
     
     - name  : Marcus Wong
       image : images/about/Marcus Wong.jpg
@@ -37,12 +37,6 @@ department:
 
   - dept_name: Events
     members  :
-    - name  : Lye Shi Qi
-      image : images/about/Lye Shi Qi.png
-      designation : Events Manager
-      description : 
-      linkedIn    : https://www.linkedin.com/in/lye-shi-qi-92ba28328/
-
     - name  : Goh Yi Siang
       image : images/about/Goh Yi Siang.jpg
       designation : Events Executive
