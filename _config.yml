@@ -1,0 +1,27 @@
+title: "IEEE UNM"
+email: ""
+description: "IEEE University of Nottingham Malaysia Student Branch"
+
+url: "https://ieee-unm.github.io"
+baseurl: "/IEEE_UNM_websitetest"
+
+markdown: kramdown
+
+permalink: /updates/:year/:month/:day/:title/
+
+collections:
+  committees:
+    output: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+collections:
+  committees:
+    output: false

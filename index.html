@@ -1,0 +1,497 @@
+---
+layout: default
+title: Home
+description: IEEE University of Nottingham Malaysia Student Branch.
+---
+
+{%- comment -%}
+=========================================================
+UPCOMING / IMPORTANT BANNER
+=========================================================
+
+Posts can use:
+
+    upcoming: true
+    upcoming_date: YYYY-MM-DD HH:MM:SS +0800
+
+Supported categories:
+
+    Event
+    Workshop
+    Announcement
+
+The banner displays the nearest future upcoming_date.
+=========================================================
+{%- endcomment -%}
+
+{% assign upcoming_posts = site.posts
+    | where: "upcoming", true
+    | sort: "upcoming_date"
+%}
+
+{% assign upcoming_item = nil %}
+
+{% for candidate in upcoming_posts %}
+
+    {% if candidate.upcoming_date %}
+
+        {% if candidate.upcoming_date > site.time %}
+
+            {% if candidate.category == "Event"
+                or candidate.category == "Workshop"
+                or candidate.category == "Announcement" %}
+
+                {% assign upcoming_item = candidate %}
+                {% break %}
+
+            {% endif %}
+
+        {% endif %}
+
+    {% endif %}
+
+{% endfor %}
+
+
+{%- comment -%}
+=========================================================
+BANNER
+=========================================================
+{%- endcomment -%}
+
+{% if upcoming_item %}
+
+<section class="event-banner" aria-label="Important notice">
+
+    <a
+        href="{{ upcoming_item.url | relative_url }}"
+        class="event-banner-link"
+    >
+
+        <div class="event-banner-track">
+
+            {% for i in (1..4) %}
+
+                <div
+                    class="event-banner-group"
+                    {% if i != 1 %}aria-hidden="true"{% endif %}
+                >
+
+                    {% if upcoming_item.category == "Event" %}
+
+                        <span class="event-banner-label">
+                            UPCOMING EVENT
+                        </span>
+
+                    {% elsif upcoming_item.category == "Workshop" %}
+
+                        <span class="event-banner-label">
+                            UPCOMING WORKSHOP
+                        </span>
+
+                    {% elsif upcoming_item.category == "Announcement" %}
+
+                        <span class="event-banner-label">
+                            IMPORTANT
+                        </span>
+
+                    {% else %}
+
+                        <span class="event-banner-label">
+                            UPDATE
+                        </span>
+
+                    {% endif %}
+
+
+                    <span class="event-banner-separator">
+                        •
+                    </span>
+
+
+                    <span class="event-banner-title">
+                        {{ upcoming_item.title }}
+                    </span>
+
+
+                    <span class="event-banner-separator">
+                        •
+                    </span>
+
+
+                    <span class="event-banner-date">
+                        {{ upcoming_item.upcoming_date | date: "%d %B %Y" }}
+                    </span>
+
+
+                    <span class="event-banner-arrow">
+                        →
+                    </span>
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+    </a>
+
+</section>
+
+
+<!-- Keeps page content below the fixed banner -->
+
+<div
+    class="event-banner-spacer"
+    aria-hidden="true"
+></div>
+
+{% endif %}
+
+
+{%- comment -%}
+=========================================================
+HERO
+=========================================================
+{%- endcomment -%}
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <h1 class="hero-title">
+
+            <span class="hero-title-desktop">
+                IEEE University of Nottingham - Student Branch
+            </span>
+
+            <span class="hero-title-mobile">
+                IEEE UNM
+            </span>
+
+        </h1>
+
+
+        <div class="hero-discipline">
+
+            <span id="rotatingText">
+                Electrical
+            </span>
+
+        </div>
+
+
+        <p>
+            Technological Innovation and Excellence
+            for the Benefit of Humanity.
+        </p>
+
+
+        <a
+            href="{{ '/about.html' | relative_url }}"
+            class="button-placeholder"
+        >
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+
+{%- comment -%}
+=========================================================
+ABOUT IEEE UNM
+=========================================================
+{%- endcomment -%}
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                ABOUT IEEE UNM
+            </p>
+
+            <h2>
+                Building a community of future engineers.
+            </h2>
+
+            <p>
+                IEEE UNM provides students with opportunities to learn,
+                collaborate, lead and engage with technology beyond the classroom.
+            </p>
+
+        </div>
+
+
+        <div class="two-column">
+
+            <div class="text-block">
+
+                <h3>
+                    Vision
+                </h3>
+
+                <p>
+                    To foster a connected community of students who are inspired
+                    to explore technology, innovation and professional growth.
+                </p>
+
+            </div>
+
+
+            <div class="text-block">
+
+                <h3>
+                    Mission
+                </h3>
+
+                <p>
+                    To create meaningful technical, professional and social
+                    opportunities for students through events, workshops and collaboration.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{%- comment -%}
+=========================================================
+WHAT WE DO
+=========================================================
+{%- endcomment -%}
+
+<section class="section section-blue">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                WHAT WE DO
+            </p>
+
+            <h2>
+                Learn, build, connect.
+            </h2>
+
+        </div>
+
+
+        <div class="activity-grid">
+
+            <article class="activity-card">
+
+                <div class="icon-placeholder">
+                    01
+                </div>
+
+                <h3>
+                    Technical Workshops
+                </h3>
+
+                <p>
+                    Hands-on opportunities to explore engineering and technology.
+                </p>
+
+            </article>
+
+
+            <article class="activity-card">
+
+                <div class="icon-placeholder">
+                    02
+                </div>
+
+                <h3>
+                    Competitions
+                </h3>
+
+                <p>
+                    Activities that encourage problem solving,
+                    creativity and teamwork.
+                </p>
+
+            </article>
+
+
+            <article class="activity-card">
+
+                <div class="icon-placeholder">
+                    03
+                </div>
+
+                <h3>
+                    Professional Development
+                </h3>
+
+                <p>
+                    Industry exposure, talks and opportunities
+                    to build career skills.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{%- comment -%}
+=========================================================
+LATEST UPDATES
+=========================================================
+{%- endcomment -%}
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading split-heading">
+
+            <div>
+
+                <p class="eyebrow">
+                    LATEST UPDATES
+                </p>
+
+                <h2>
+                    What's happening?
+                </h2>
+
+            </div>
+
+
+            <a
+                class="text-link"
+                href="{{ '/updates.html' | relative_url }}"
+            >
+                View All Updates →
+            </a>
+
+        </div>
+
+
+        <div class="event-grid">
+
+            {% assign latest_posts = site.posts
+                | sort: "date"
+                | reverse
+            %}
+
+
+            {% for post in latest_posts limit: 3 %}
+
+            <article class="event-card">
+
+                <a href="{{ post.url | relative_url }}">
+
+                    <div class="event-image">
+
+                        {% if post.image %}
+
+                            <img
+                                src="{{ post.image | relative_url }}"
+                                alt="{{ post.title }}"
+                            >
+
+                        {% else %}
+
+                            IMAGE
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="event-body">
+
+                        <div>
+
+                            <span class="post-category">
+                                {{ post.category | default: "Update" }}
+                            </span>
+
+
+                            <h3>
+                                {{ post.title }}
+                            </h3>
+
+
+                            <p>
+                                {{ post.excerpt
+                                    | strip_html
+                                    | truncate: 120
+                                }}
+                            </p>
+
+                        </div>
+
+
+                        <span class="text-link">
+                            Read More →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+{%- comment -%}
+=========================================================
+CONTACT CTA
+=========================================================
+{%- endcomment -%}
+
+<section class="section section-cta">
+
+    <div class="container contact-grid">
+
+        <div>
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Be part of the community.
+            </h2>
+
+            <p>
+                Connect with IEEE UNM and stay updated
+                with our latest activities and events.
+            </p>
+
+        </div>
+
+
+        <a
+            class="button-placeholder"
+            href="{{ '/contact.html' | relative_url }}"
+        >
+            Contact Us
+        </a>
+
+    </div>
+
+</section>
