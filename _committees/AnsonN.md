@@ -2,6 +2,6 @@
 name: "Anson Ng"
 title: "Technical Executive"
 team: "Technical Team"
-image: "images/committee/profile_picture_placeholder.svg"
+image: "images/committee/sonion.png"
 order: 2
 ---
