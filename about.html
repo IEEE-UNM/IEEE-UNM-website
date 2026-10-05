@@ -1,0 +1,274 @@
+---
+layout: default
+title: "About"
+permalink: /about.html
+---
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">IEEE UNM - SB</p>
+
+        <h1>About Us</h1>
+
+            <p>
+                We are an academic society that organises a variety
+                of events and activities throughout the academic terms
+                at the University of Nottingham Malaysia.
+            </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">OUR AIM</p>
+
+            <h2>Technology for the benefit of humanity.</h2>
+        </div>
+
+        <div class="text-block">
+            <h2>Aim</h2>
+
+            <p>
+                Aligned with the mission of IEEE, IEEE UNM SB aims
+                to foster technological innovation and excellence
+                for the benefit of humanity.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section section-blue">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">OUR OBJECTIVES</p>
+
+            <h2>What we strive to achieve.</h2>
+        </div>
+
+        <div class="objectives-grid">
+
+            <article class="activity-card">
+                <div class="icon-placeholder">
+                    01
+                </div>
+
+                <h3>Networking</h3>
+
+                <p>
+                    To provide a networking platform for electrical
+                    and electronics engineers.
+                </p>
+            </article>
+
+
+            <article class="activity-card">
+                <div class="icon-placeholder">
+                    02
+                </div>
+
+                <h3>Professionalism</h3>
+
+                <p>
+                    To nurture the mindset of professionalism
+                    and innovative thinking.
+                </p>
+            </article>
+
+
+            <article class="activity-card">
+                <div class="icon-placeholder">
+                    03
+                </div>
+
+                <h3>Technical &amp; Soft Skills</h3>
+
+                <p>
+                    To sharpen the technical skills and soft skills
+                    of members to better prepare them for the industry.
+                </p>
+            </article>
+
+
+            <article class="activity-card">
+                <div class="icon-placeholder">
+                    04
+                </div>
+
+                <h3>Volunteerism</h3>
+
+                <p>
+                    To nurture volunteerism to support impactful
+                    humanitarian activities on a community or
+                    local level.
+                </p>
+            </article>
+
+
+            <article class="activity-card">
+                <div class="icon-placeholder">
+                    05
+                </div>
+
+                <h3>Promoting IEEE</h3>
+
+                <p>
+                    To promote the international organization IEEE.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow">OUR VISION &amp; MISSION</p>
+
+            <h2>Growing together through engineering.</h2>
+        </div>
+
+        <div class="two-column">
+
+            <div class="text-block">
+
+                <h2>Vision</h2>
+
+                <p>
+                    To create a rapport community that fosters
+                    great teamwork and inspires lifelong learning
+                    in the field of Electrical and Electronic
+                    Engineering.
+                </p>
+
+            </div>
+
+
+            <div class="text-block">
+
+                <h2>Mission</h2>
+
+                <p>
+                    IEEE UNM SB organises participant-centred
+                    events and activities that benefit participants
+                    in their professional and personal development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="section section-blue">
+    <div class="container">
+
+        <div class="section-heading">
+            <h2>OUR COMMUNITY</h2>
+        </div>
+
+        {% assign team_order = "Executive Committee,Events Team,Technical Team,Marketing Team" | split: "," %}
+
+        <div
+            class="committee-tabs"
+            role="tablist"
+            aria-label="Committee teams"
+        >
+
+            {% for team_name in team_order %}
+
+                {% assign team_members = site.committees | where: "team", team_name %}
+
+                {% if team_members.size > 0 %}
+
+                    <button
+                        class="committee-tab{% if forloop.first %} active{% endif %}"
+                        type="button"
+                        role="tab"
+                        data-team="{{ team_name | slugify }}"
+                        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                    >
+                        {{ team_name }}
+                    </button>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+
+        <div class="committee-panels">
+
+            {% for team_name in team_order %}
+
+                {% assign members = site.committees
+                    | where: "team", team_name
+                    | sort: "order"
+                %}
+
+                {% if members.size > 0 %}
+
+                    <div
+                        class="committee-panel{% if forloop.first %} active{% endif %}"
+                        data-team="{{ team_name | slugify }}"
+                        role="tabpanel"
+                    >
+
+                        <div class="committee-grid">
+
+                            {% for member in members %}
+
+                                <article class="profile-card">
+
+                                    <div class="profile-image">
+
+                                        {% if member.image %}
+                                            <img
+                                                src="{{ member.image | relative_url }}"
+                                                alt="{{ member.name }}"
+                                                loading="lazy"
+                                            >
+                                        {% else %}
+                                            <span>IMAGE</span>
+                                        {% endif %}
+
+                                    </div>
+
+                                    <div class="profile-content">
+
+                                        <h3>
+                                            {{ member.name }}
+                                        </h3>
+
+                                        <p>
+                                            {{ member.title }}
+                                        </p>
+
+                                    </div>
+
+                                </article>
+
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+
+                {% endif %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section>

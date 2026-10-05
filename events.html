@@ -1,0 +1,166 @@
+---
+layout: default
+title: "Events"
+permalink: /events.html
+---
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">IEEE UNM - SB</p>
+
+        <h1>Events</h1>
+
+        <p>
+            A record of our workshops, talks, competitions and
+            community events.
+        </p>
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+
+        {% assign event_posts = site.posts
+            | where: "category", "Event"
+        %}
+
+        {% assign workshop_posts = site.posts
+            | where: "category", "Workshop"
+        %}
+
+        {% assign event_posts = event_posts
+            | concat: workshop_posts
+            | sort: "date"
+            | reverse
+        %}
+
+
+        {% assign current_academic_year = "" %}
+
+
+        {% for post in event_posts %}
+
+            {%- comment -%}
+            Use the academic_year from the post front matter
+            if it exists. Otherwise, calculate it automatically.
+
+            September–December:
+            2025 → 2025-2026
+
+            January–August:
+            2026 → 2025-2026
+            {%- endcomment -%}
+
+            {% assign post_year = post.date | date: "%Y" %}
+            {% assign post_month = post.date | date: "%m" | plus: 0 %}
+
+
+            {% if post.academic_year %}
+
+                {% assign academic_year = post.academic_year %}
+
+            {% elsif post_month >= 9 %}
+
+                {% assign next_year = post_year | plus: 1 %}
+                {% assign academic_year = post_year | append: "-" | append: next_year %}
+
+            {% else %}
+
+                {% assign previous_year = post_year | minus: 1 %}
+                {% assign academic_year = previous_year | append: "-" | append: post_year %}
+
+            {% endif %}
+
+
+            {%- comment -%}
+            Start a new academic-year section when the year changes.
+            {%- endcomment -%}
+
+            {% if academic_year != current_academic_year %}
+
+                {% if current_academic_year != "" %}
+                        </div>
+                    </div>
+                {% endif %}
+
+
+                <div class="year-block">
+
+                    <div class="year-title">
+                        <p class="eyebrow">EVENT ARCHIVE</p>
+
+                        <h2>{{ academic_year }}</h2>
+                    </div>
+
+
+                    <div class="event-grid">
+
+
+                {% assign current_academic_year = academic_year %}
+
+            {% endif %}
+
+
+            <article class="event-card">
+
+                <a href="{{ post.url | relative_url }}">
+
+                    <div class="event-image">
+
+                        {% if post.image %}
+
+                            <img
+                                src="{{ post.image | relative_url }}"
+                                alt="{{ post.title }}"
+                            >
+
+                        {% else %}
+
+                            IMAGE
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="event-body">
+
+                        <span class="post-category">
+                            {{ post.category }}
+                        </span>
+
+
+                        <h3>
+                            {{ post.title }}
+                        </h3>
+
+
+                        <p>
+                            {{ post.date | date: "%d %B %Y" }}
+                        </p>
+
+
+                        <span class="text-link">
+                            View Event →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </article>
+
+
+        {% endfor %}
+
+
+        {% if current_academic_year != "" %}
+
+                    </div>
+                </div>
+
+        {% endif %}
+
+    </div>
+</section>

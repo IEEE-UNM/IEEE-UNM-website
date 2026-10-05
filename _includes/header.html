@@ -1,0 +1,41 @@
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="{{ '/' | relative_url }}" class="logo-button" aria-label="IEEE UNM Home">
+            <img
+                src="{{ '/images/ieee-unm-logo.png' | relative_url }}"
+                alt="IEEE UNM Student Branch"
+            >
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/about.html' | relative_url }}">About</a>
+            <a href="{{ '/updates.html' | relative_url }}">Updates</a>
+            <a href="{{ '/events.html' | relative_url }}">Events</a>
+            <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+        </nav>
+
+        <div class="header-controls">
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Toggle dark mode"
+                aria-pressed="false"
+            >
+                <span class="theme-icon" id="themeIcon">☾</span>
+            </button>
+
+            <button
+                class="menu-placeholder"
+                id="menuButton"
+                type="button"
+                aria-label="Open menu"
+            >
+                ☰
+            </button>
+        </div>
+
+    </div>
+</header>

@@ -1,0 +1,196 @@
+---
+layout: default
+title: "Updates"
+permalink: /updates.html
+---
+
+<section class="page-header">
+    <div class="container">
+        <p class="eyebrow">IEEE UNM - SB</p>
+        <h1>Latest Updates</h1>
+        <p>
+            Follow our latest activities, announcements, workshops and events.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <!-- =========================
+             FILTERS
+             ========================= -->
+
+        <div class="updates-filters">
+
+            <div class="filter-group search-group">
+                <label for="updateSearch">Search</label>
+
+                <input
+                    type="text"
+                    id="updateSearch"
+                    placeholder="Search updates..."
+                    autocomplete="off"
+                >
+            </div>
+
+
+            <div class="filter-group">
+                <label for="academicYearFilter">
+                    Academic Year
+                </label>
+
+                <select id="academicYearFilter">
+                    <option value="all">All Years</option>
+                </select>
+            </div>
+
+
+            <div class="filter-group">
+                <label for="typeFilter">
+                    Type
+                </label>
+
+                <select id="typeFilter">
+                    <option value="all">All Types</option>
+                </select>
+            </div>
+
+
+            <div class="filter-group filter-clear">
+                <button
+                    id="clearFilters"
+                    type="button"
+                >
+                    Clear Filters
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             POSTS
+             ========================= -->
+
+        <div class="post-grid" id="updatesGrid">
+
+            {% assign posts = site.posts | sort: 'date' | reverse %}
+
+            {% for post in posts %}
+
+                {% assign post_year = post.date | date: "%Y" %}
+                {% assign post_month = post.date | date: "%m" | plus: 0 %}
+
+                {% if post.academic_year %}
+
+                    {% assign academic_year = post.academic_year %}
+
+                {% elsif post_month >= 9 %}
+
+                    {% assign next_year = post_year | plus: 1 %}
+
+                    {% assign academic_year =
+                        post_year
+                        | append: "-"
+                        | append: next_year
+                    %}
+
+                {% else %}
+
+                    {% assign previous_year = post_year | minus: 1 %}
+
+                    {% assign academic_year =
+                        previous_year
+                        | append: "-"
+                        | append: post_year
+                    %}
+
+                {% endif %}
+
+
+                {% assign post_type =
+                    post.category
+                    | default: "Update"
+                %}
+
+
+                <article
+                    class="post-card update-card"
+                    data-title="{{ post.title | downcase | escape }}"
+                    data-academic-year="{{ academic_year }}"
+                    data-type="{{ post_type | downcase | escape }}"
+                >
+
+                    <a href="{{ post.url | relative_url }}">
+
+                        <div class="event-image">
+
+                            {% if post.image %}
+
+                                <img
+                                    src="{{ post.image | relative_url }}"
+                                    alt="{{ post.title }}"
+                                >
+
+                            {% else %}
+
+                                IMAGE
+
+                            {% endif %}
+
+                        </div>
+
+
+                        <div class="event-body">
+
+                            <span class="post-category">
+                                {{ post_type }}
+                            </span>
+
+
+                            <h2>
+                                {{ post.title }}
+                            </h2>
+
+
+                            <p class="post-date">
+                                {{ post.date | date: "%d %B %Y" }}
+                            </p>
+
+
+                            <p>
+                                {{ post.excerpt
+                                    | strip_html
+                                    | truncate: 160
+                                }}
+                            </p>
+
+
+                            <span class="text-link">
+                                Read More →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+
+            {% endfor %}
+
+        </div>
+
+
+        <!-- No results -->
+
+        <p
+            id="noResults"
+            class="no-results"
+            style="display: none;"
+        >
+            No updates found.
+        </p>
+
+    </div>
+</section>
