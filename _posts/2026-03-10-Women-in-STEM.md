@@ -4,7 +4,7 @@ title: "Women in STEM"
 date: 2026-03-10 09:00:00 +0800
 category: Event
 academic_year: "2025-2026"
-image: /images/posts/2025-2026/14. Women in STEM.png
+image: /images/2025-2026/14. Women in STEM.png
 ---
 
 Women in STEM 2026 is a collaborative, student-led initiative that enhances the UNM student experience through inclusive, interdisciplinary activities beyond the classroom. 

@@ -4,7 +4,7 @@ title: "STM32 Workshop"
 date: 2025-10-16 19:00:00 +0800
 category: Workshop
 academic_year: "2025-2026"
-image: /images/posts/2025-2026/4. STM32 Workshop.png
+image: /images/2025-2026/4. STM32 Workshop.png
 ---
 
 The STM32 Workshop aims to introduce participants to the fundamentals of embedded systems and microcontroller programming using the STM32 platform. Through interactive sessions, participants will learn to configure GPIOs, timers, and interrupts using STM32CubeIDE. 
