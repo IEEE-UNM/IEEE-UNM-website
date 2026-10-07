@@ -2,6 +2,6 @@
 name: "Siow Xin Ru"
 title: "Event Executive"
 team: "Events Team"
-image: "images/committee/Siow Xin Ru.jpg"
+image: "images/committee/Siow Xin Ru.webp"
 order: 3
 ---
