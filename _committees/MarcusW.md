@@ -2,6 +2,6 @@
 name: "Marcus Wong"
 title: "Vice President"
 team: "Executive Committee"
-image: "images/committee/profile_picture_placeholder.svg"
+image: "images/committee/Wong Yan Jie.png"
 order: 2
 ---

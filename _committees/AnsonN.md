@@ -1,7 +1,7 @@
 ---
-name: "Anson Ng"
+name: "Ng Anson"
 title: "Technical Executive"
 team: "Technical Team"
-image: "images/committee/sonion.png"
-order: 2
+image: "images/committee/Ng Anson.jpeg"
+order: 3
 ---
