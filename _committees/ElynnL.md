@@ -2,6 +2,6 @@
 name: "Elynn Leong Yong Er"
 title: "President"
 team: "Executive Committee"
-image: "images/committee/profile_picture_placeholder.svg"
+image: "images/committee/Elynn Leong Yong Er.webp"
 order: 1
 ---

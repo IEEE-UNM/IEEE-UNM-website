@@ -2,6 +2,6 @@
 name: "Gan Ching Kang"
 title: "Technical Executive"
 team: "Technical Team"
-image: "images/committee/profile_picture_placeholder.svg"
+image: "images/committee/Gan Ching Kang.webp"
 order: 1
 ---
